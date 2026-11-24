@@ -1,0 +1,878 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST DOCUMENTS
+   Existing Theme
+========================================= */
+
+.priest-documents-page {
+  min-height: 100vh;
+
+  background: #faf7f2;
+
+  color: #4b211b;
+
+  padding: 20px;
+}
+
+.priest-documents-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.priest-documents-header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.documents-back-button {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #eaded2;
+
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.documents-back-button:hover {
+  background: #f6eee5;
+
+  transform: translateX(-2px);
+}
+
+.documents-header-spacer {
+  width: 42px;
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.documents-progress {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  max-width: 850px;
+
+  margin: 10px auto 25px;
+}
+
+.documents-progress-step {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.documents-progress-step span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+.documents-progress-step p {
+  margin: 0;
+}
+
+.documents-progress-step.completed,
+.documents-progress-step.active {
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+.documents-progress-step.completed span {
+  background: #f1dfca;
+
+  border-color: #d5b28c;
+
+  color: #7c2f23;
+}
+
+.documents-progress-step.active span {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+.documents-progress-line {
+  width: 45px;
+
+  height: 1px;
+
+  background: #dccfc4;
+
+  margin: 0 8px;
+}
+
+.documents-progress-line.active {
+  background: #b97855;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.priest-documents-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow: 0 8px 30px rgba(83, 42, 28, 0.07);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.documents-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 23px;
+}
+
+.documents-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #8a3928;
+
+  background: #f8e9d8;
+}
+
+.documents-title h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.documents-title p {
+  margin: 5px 0 0;
+
+  color: #8c756a;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   INFO
+========================================= */
+
+.documents-info {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 14px 15px;
+
+  margin-bottom: 25px;
+
+  border-radius: 12px;
+
+  background: #fff6e9;
+
+  border: 1px solid #f0dfc6;
+
+  color: #765b49;
+}
+
+.documents-info svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #9c632d;
+}
+
+.documents-info p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   DOCUMENT LIST
+========================================= */
+
+.documents-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.document-item {
+  padding: 17px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 14px;
+
+  transition: 0.2s ease;
+}
+
+.document-item.uploaded {
+  border-color: #c9a98c;
+
+  background: #fffbf6;
+}
+
+.document-item-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin-bottom: 14px;
+}
+
+.document-item-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #f8eee5;
+
+  color: #8a3928;
+}
+
+.document-item-content {
+  flex: 1;
+}
+
+.document-name-row {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.document-item-content h2 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.document-item-content p {
+  margin: 4px 0 0;
+
+  color: #97847a;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.required-badge {
+  padding: 3px 7px;
+
+  border-radius: 20px;
+
+  background: #f8e3d9;
+
+  color: #9a3d2c;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   UPLOAD
+========================================= */
+
+.upload-area {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  border: 1px dashed #cdbdaf;
+
+  border-radius: 11px;
+
+  background: #fffcf8;
+
+  color: #8b4c3a;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.upload-area:hover {
+  border-color: #a5523b;
+
+  background: #fff7ee;
+}
+
+.upload-area input {
+  display: none;
+}
+
+.upload-area > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.upload-area strong {
+  font-size: 13px;
+}
+
+.upload-area span {
+  color: #9d8b80;
+
+  font-size: 10px;
+}
+
+/* =========================================
+   UPLOADED FILE
+========================================= */
+
+.uploaded-file {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 58px;
+
+  padding: 9px 11px;
+
+  border-radius: 10px;
+
+  background: #f8f1e9;
+
+  border: 1px solid #e4d5c8;
+}
+
+.uploaded-file-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #7c2f23;
+
+  color: #fff;
+}
+
+.uploaded-file-info {
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.uploaded-file-info strong {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  color: #5b3028;
+
+  font-size: 12px;
+}
+
+.uploaded-file-info span {
+  color: #9a877b;
+
+  font-size: 10px;
+}
+
+.remove-file-button {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #f4dfd8;
+
+  color: #9a3d2c;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.remove-file-button:hover {
+  background: #ecd0c8;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.document-error {
+  margin: 7px 0 0;
+
+  color: #b33a2e;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   DECLARATION
+========================================= */
+
+.declaration-section {
+  margin-top: 25px;
+
+  padding-top: 23px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.declaration-box {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  padding: 14px;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 12px;
+
+  background: #fff;
+
+  color: #654137;
+
+  font-family: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.declaration-box:hover {
+  background: #fffaf5;
+
+  border-color: #c8a898;
+}
+
+.declaration-box.accepted {
+  background: #fff6e9;
+
+  border-color: #b97855;
+}
+
+.declaration-check {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #cdbdaf;
+
+  border-radius: 6px;
+
+  color: #fff;
+}
+
+.declaration-box.accepted .declaration-check {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+}
+
+.declaration-text {
+  color: #72584c;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.documents-actions {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.documents-secondary-button,
+.documents-primary-button {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.documents-secondary-button {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+.documents-secondary-button:hover {
+  background: #f8f0e9;
+}
+
+.documents-primary-button {
+  min-width: 175px;
+
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  box-shadow: 0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+.documents-primary-button:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.documents-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+
+  color: #99867b;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.documents-footer p {
+  margin: 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .documents-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .documents-progress-step p {
+    display: none;
+  }
+
+  .documents-progress-line {
+    width: 35px;
+
+    margin: 0 6px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .priest-documents-page {
+    padding: 12px;
+  }
+
+  .priest-documents-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .documents-title h1 {
+    font-size: 21px;
+  }
+
+  .documents-title p {
+    font-size: 13px;
+  }
+
+  .documents-actions {
+    flex-direction: column-reverse;
+  }
+
+  .documents-secondary-button,
+  .documents-primary-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .priest-documents-card {
+    padding: 18px 14px;
+  }
+
+  .documents-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .documents-title {
+    gap: 11px;
+  }
+}
+/* =========================================
+   FINAL 5-STEP WORKFLOW
+========================================= */
+
+.documents-progress {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.documents-progress-line {
+  width: 42px;
+  min-width: 42px;
+  margin: 0 7px;
+}
+
+/* =========================================
+   DOCUMENTS LOGO
+   Smaller and contained
+========================================= */
+
+.priest-documents-header .documents-logo {
+  width: 170px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.priest-documents-header .documents-logo img {
+  width: 170px;
+  height: 82px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .documents-progress {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .documents-progress-line {
+    width: 32px;
+    min-width: 32px;
+    margin: 0 5px;
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .priest-documents-header .documents-logo {
+    width: 135px;
+    height: 65px;
+  }
+
+  .priest-documents-header .documents-logo img {
+    width: 135px;
+    height: 65px;
+  }
+
+}

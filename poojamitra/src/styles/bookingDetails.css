@@ -1,0 +1,435 @@
+.booking-details-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #202124;
+}
+
+/* Header */
+
+.booking-details-header {
+  height: 64px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border-bottom: 1px solid #eeeeee;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.booking-details-header h1 {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.back-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #f4f5f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.header-space {
+  width: 40px;
+}
+
+/* Main */
+
+.booking-details-content {
+  max-width: 650px;
+  margin: auto;
+  padding: 18px 16px 40px;
+}
+
+/* Summary */
+
+.booking-summary-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+.summary-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.booking-label {
+  color: #777;
+  font-size: 12px;
+}
+
+.summary-top h2 {
+  font-size: 15px;
+  margin: 5px 0 0;
+  letter-spacing: 0.4px;
+}
+
+.booking-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.booking-status.confirmed {
+  background: #e8f7ed;
+  color: #198754;
+}
+
+.booking-status.completed {
+  background: #e8f0ff;
+  color: #2563eb;
+}
+
+.booking-status.pending {
+  background: #fff5df;
+  color: #a16207;
+}
+
+.booking-status.cancelled {
+  background: #ffe8e8;
+  color: #dc2626;
+}
+
+/* Pooja */
+
+.pooja-name-section {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeeee;
+}
+
+.pooja-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #fff3df;
+  color: #c87518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.pooja-name-section span {
+  font-size: 12px;
+  color: #777;
+}
+
+.pooja-name-section h3 {
+  margin: 4px 0 0;
+  font-size: 18px;
+}
+
+/* Cards */
+
+.details-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin: 0 0 17px;
+}
+
+/* Detail rows */
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 11px 0;
+}
+
+.detail-row + .detail-row {
+  border-top: 1px solid #f0f0f0;
+}
+
+.detail-icon {
+  width: 38px;
+  height: 38px;
+  background: #f3f6ff;
+  color: #536dfe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-row div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.detail-row span {
+  font-size: 12px;
+  color: #888;
+}
+
+.detail-row strong {
+  font-size: 14px;
+}
+
+/* Location */
+
+.location-box {
+  display: flex;
+  gap: 13px;
+  padding: 14px;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.location-icon {
+  width: 38px;
+  height: 38px;
+  background: #fff0ef;
+  color: #e05a47;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.location-box strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.location-box p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Priest */
+
+.priest-box {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.priest-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #eee8ff;
+  color: #6844c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.priest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.priest-info strong {
+  font-size: 15px;
+}
+
+.priest-info span {
+  font-size: 12px;
+  color: #777;
+}
+
+.priest-phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #555;
+  margin-top: 3px;
+}
+
+.not-assigned {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff9eb;
+  border: 1px solid #f5e4b7;
+  padding: 14px;
+  border-radius: 12px;
+  color: #9a6a00;
+}
+
+.not-assigned strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.not-assigned p {
+  margin: 0;
+  font-size: 12px;
+  color: #927b43;
+}
+
+/* Items */
+
+.section-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-count {
+  background: #f1f3f5;
+  color: #666;
+  font-size: 11px;
+  padding: 5px 9px;
+  border-radius: 15px;
+}
+
+.items-list {
+  border-top: 1px solid #eeeeee;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.item-number {
+  width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  background: #fff4e5;
+  color: #c47718;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.item-name {
+  flex: 1;
+  font-size: 14px;
+}
+
+.item-quantity {
+  color: #777;
+  font-size: 12px;
+}
+
+.empty-items {
+  color: #888;
+  font-size: 13px;
+}
+
+/* Notes */
+
+.notes-box {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 14px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Payment */
+
+.amount-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.amount-row span {
+  color: #666;
+  font-size: 14px;
+}
+
+.amount-row strong {
+  font-size: 20px;
+}
+
+.payment-status {
+  background: #f8f9fa;
+  color: #888;
+  padding: 11px;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .booking-details-header {
+    padding: 0 14px;
+  }
+
+  .booking-details-content {
+    padding: 14px 12px 30px;
+  }
+
+  .booking-summary-card,
+  .details-card {
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  .summary-top {
+    align-items: flex-start;
+  }
+
+  .booking-status {
+    padding: 6px 9px;
+    font-size: 11px;
+  }
+
+  .pooja-name-section h3 {
+    font-size: 16px;
+  }
+
+}

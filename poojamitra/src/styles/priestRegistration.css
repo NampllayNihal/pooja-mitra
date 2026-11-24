@@ -1,0 +1,728 @@
+/* =========================================
+   POOJAMITRA - PRIEST REGISTRATION
+   Existing Theme Compatible
+========================================= */
+
+.priest-registration-page {
+  min-height: 100vh;
+
+  background: #faf7f2;
+
+  color: #4b211b;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+.priest-registration-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.priest-registration-header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+
+  min-height: 130px;
+
+  position: relative;
+}
+
+.back-button {
+  width: 42px;
+
+  height: 42px;
+
+  border: 1px solid #eaded2;
+
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+.back-button:hover {
+  background: #f6eee5;
+
+  transform: translateX(-2px);
+}
+
+.header-spacer {
+  width: 42px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   PRIEST REGISTRATION LOGO
+========================================= */
+
+/*
+   The Logo component contains the actual image.
+   We control it here so it doesn't become huge.
+*/
+
+.priest-registration-header .logo-crop {
+  width: 260px;
+
+  height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+.priest-registration-header .logo-crop img {
+  display: block;
+
+  width: 260px;
+
+  height: 120px;
+
+  max-width: none;
+
+  max-height: none;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  margin: 0;
+
+  padding: 0;
+
+  mix-blend-mode: multiply;
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.registration-progress {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 10px auto 25px;
+
+  max-width: 650px;
+}
+
+.progress-step {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.progress-step span {
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+.progress-step p {
+  margin: 0;
+}
+
+.progress-step.active {
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+.progress-step.active span {
+  color: #fff;
+
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+}
+
+.progress-line {
+  height: 1px;
+
+  width: 65px;
+
+  background: #dccfc4;
+
+  margin: 0 12px;
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.priest-registration-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 8px 30px rgba(83, 42, 28, 0.07);
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.registration-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.registration-icon {
+  width: 50px;
+
+  height: 50px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #8a3928;
+
+  background: #f8e9d8;
+
+  flex-shrink: 0;
+}
+
+.registration-title h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.registration-title p {
+  margin: 5px 0 0;
+
+  color: #8c756a;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   NOTE
+========================================= */
+
+.registration-note {
+  display: flex;
+
+  gap: 10px;
+
+  padding: 13px 15px;
+
+  margin-bottom: 28px;
+
+  border-radius: 12px;
+
+  background: #fff6e9;
+
+  border: 1px solid #f0dfc6;
+}
+
+.registration-note span {
+  color: #b66a16;
+
+  font-size: 16px;
+
+  margin-top: 1px;
+}
+
+.registration-note p {
+  margin: 0;
+
+  color: #765b49;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+  margin-bottom: 19px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #5b3028;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.form-group label span {
+  color: #a9402d;
+}
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.input-wrapper {
+  min-height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 11px;
+
+  background: #fff;
+
+  padding: 0 13px;
+
+  transition: 0.2s ease;
+
+  box-sizing: border-box;
+}
+
+.input-wrapper svg {
+  flex-shrink: 0;
+
+  color: #9b6a53;
+
+  margin-right: 10px;
+}
+
+.input-wrapper:focus-within {
+  border-color: #a5523b;
+
+  box-shadow:
+    0 0 0 3px rgba(165, 82, 59, 0.08);
+}
+
+/* =========================================
+   IMPORTANT:
+   TYPED TEXT = BLACK
+========================================= */
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #111111 !important;
+
+  -webkit-text-fill-color: #111111;
+
+  font-family: inherit;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   PLACEHOLDER = GRAY
+========================================= */
+
+.input-wrapper input::placeholder,
+.input-wrapper textarea::placeholder {
+  color: #aa9b91 !important;
+
+  opacity: 1;
+
+  -webkit-text-fill-color: #aa9b91;
+}
+
+/* =========================================
+   DATE / SELECT
+========================================= */
+
+.input-wrapper input[type="date"] {
+  color: #111111 !important;
+
+  -webkit-text-fill-color: #111111;
+}
+
+.input-wrapper select {
+  cursor: pointer;
+
+  color: #111111 !important;
+}
+
+.input-wrapper select option {
+  color: #111111;
+
+  background: #ffffff;
+}
+
+/* =========================================
+   AUTOFILL
+========================================= */
+
+.input-wrapper input:-webkit-autofill,
+.input-wrapper input:-webkit-autofill:hover,
+.input-wrapper input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111111;
+
+  box-shadow:
+    0 0 0 1000px #ffffff inset;
+
+  transition:
+    background-color 9999s ease-in-out 0s;
+}
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.textarea-wrapper {
+  align-items: flex-start;
+
+  padding-top: 13px;
+}
+
+.textarea-wrapper textarea {
+  resize: vertical;
+
+  min-height: 65px;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   HINT
+========================================= */
+
+.field-hint {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #99877c;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-text {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #b33a2e;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   PINCODE
+========================================= */
+
+.pincode-group {
+  max-width: 50%;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.registration-actions {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.secondary-action,
+.primary-action {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.secondary-action {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+.secondary-action:hover {
+  background: #f8f0e9;
+}
+
+.primary-action {
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  min-width: 130px;
+
+  box-shadow:
+    0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+.primary-action:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.registration-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+
+  color: #99867b;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .priest-registration-page {
+    padding: 12px;
+  }
+
+  .priest-registration-header {
+    min-height: 95px;
+  }
+
+  .priest-registration-header .logo-crop {
+    width: 210px;
+
+    height: 90px;
+  }
+
+  .priest-registration-header .logo-crop img {
+    width: 210px;
+
+    height: 90px;
+  }
+
+  .priest-registration-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .registration-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .progress-step p {
+    display: none;
+  }
+
+  .progress-line {
+    width: 35px;
+
+    margin: 0 7px;
+  }
+
+  .registration-title h1 {
+    font-size: 21px;
+  }
+
+  .registration-title p {
+    font-size: 13px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .pincode-group {
+    max-width: 100%;
+  }
+
+  .registration-actions {
+    flex-direction: column-reverse;
+  }
+
+  .secondary-action,
+  .primary-action {
+    width: 100%;
+  }
+
+  .registration-footer {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  .priest-registration-header {
+    min-height: 80px;
+  }
+
+  .priest-registration-header .logo-crop {
+    width: 175px;
+
+    height: 75px;
+  }
+
+  .priest-registration-header .logo-crop img {
+    width: 175px;
+
+    height: 75px;
+  }
+
+  .priest-registration-card {
+    padding: 18px 14px;
+  }
+
+  .registration-icon {
+    width: 44px;
+
+    height: 44px;
+  }
+
+  .registration-title {
+    gap: 11px;
+  }
+}

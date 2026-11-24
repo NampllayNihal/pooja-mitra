@@ -1,0 +1,1061 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST VERIFICATION
+   Existing Theme
+========================================= */
+
+.priest-verification-page {
+  min-height: 100vh;
+
+  background: #faf7f2;
+
+  color: #4b211b;
+
+  padding: 20px;
+}
+
+
+.priest-verification-container {
+  width: 100%;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.priest-verification-header {
+  width: 100%;
+
+  height: 78px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+
+.verification-header-spacer {
+  width: 42px;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.priest-verification-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 24px;
+
+  padding: 34px;
+
+  box-shadow:
+    0 8px 30px rgba(83, 42, 28, 0.07);
+
+}
+
+
+/* =========================================
+   SUCCESS ICON
+========================================= */
+
+.verification-success-icon {
+  width: 68px;
+
+  height: 68px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #f1dfca;
+
+  border: 1px solid #d5b28c;
+
+  color: #7c2f23;
+
+  box-shadow:
+    0 6px 18px rgba(124, 47, 35, 0.10);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.verification-heading {
+  text-align: center;
+
+  max-width: 650px;
+
+  margin: 0 auto 25px;
+}
+
+
+.verification-small-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #9b624e;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.4px;
+
+  text-transform: uppercase;
+}
+
+
+.verification-heading h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 27px;
+
+  font-weight: 700;
+}
+
+
+.verification-heading p {
+  max-width: 590px;
+
+  margin: 9px auto 0;
+
+  color: #8c756a;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   APPLICATION ID
+========================================= */
+
+.application-id-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 15px;
+
+  margin-bottom: 16px;
+
+  border: 1px solid #ead9c8;
+
+  border-radius: 13px;
+
+  background: #fff8ef;
+}
+
+
+.application-id-icon {
+  width: 38px;
+
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #f5e4d1;
+
+  color: #8a3928;
+}
+
+
+.application-id-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.application-id-content span {
+  color: #9a8176;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.4px;
+}
+
+
+.application-id-content strong {
+  color: #5b3028;
+
+  font-size: 15px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.verification-status-box {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  padding: 16px;
+
+  margin-bottom: 30px;
+
+  border-radius: 14px;
+
+  background: #fff6e9;
+
+  border: 1px solid #f0dfc6;
+}
+
+
+.status-icon {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #f8e9d8;
+
+  color: #8a3928;
+}
+
+
+.status-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.status-title-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+.status-title-row h2 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+
+.status-badge {
+  padding: 4px 9px;
+
+  border-radius: 20px;
+
+  background: #f1dfca;
+
+  color: #7c2f23;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+}
+
+
+.status-content p {
+  margin: 6px 0 0;
+
+  color: #897469;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.verification-section {
+  margin-bottom: 30px;
+}
+
+
+.verification-section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  margin-bottom: 20px;
+}
+
+
+.section-heading-icon {
+  width: 38px;
+
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #f8eee5;
+
+  color: #8a3928;
+}
+
+
+.verification-section-heading h2 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+.verification-section-heading p {
+  margin: 4px 0 0;
+
+  color: #948177;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.verification-timeline {
+  position: relative;
+
+  padding-left: 7px;
+}
+
+
+.timeline-item {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  min-height: 82px;
+}
+
+
+.timeline-marker {
+  width: 32px;
+
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  color: #9a8176;
+
+  z-index: 2;
+}
+
+
+.timeline-item.completed .timeline-marker {
+  background: #f1dfca;
+
+  border-color: #d5b28c;
+
+  color: #7c2f23;
+}
+
+
+.timeline-item.active .timeline-marker {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+
+.timeline-content {
+  flex: 1;
+
+  padding-top: 1px;
+}
+
+
+.timeline-content h3 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+.timeline-content p {
+  max-width: 580px;
+
+  margin: 4px 0 5px;
+
+  color: #948177;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+.timeline-status {
+  color: #a17a66;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+}
+
+
+.timeline-item.active .timeline-status {
+  color: #7c2f23;
+}
+
+
+.timeline-line {
+  width: 1px;
+
+  height: 28px;
+
+  margin-left: 22px;
+
+  background: #ddd0c5;
+}
+
+
+.timeline-line.active {
+  background: #c58d70;
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.verification-info-section {
+  margin-bottom: 28px;
+}
+
+
+.verification-info-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  background: #fffaf4;
+
+  border: 1px solid #eaded2;
+}
+
+
+.verification-info-icon {
+  width: 35px;
+
+  height: 35px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #f8eee5;
+
+  color: #8a3928;
+}
+
+
+.verification-info-card h3 {
+  margin: 0;
+
+  color: #654137;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.verification-info-card p {
+  margin: 4px 0 0;
+
+  color: #958178;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+.registered-mobile {
+  display: inline-block;
+
+  margin-top: 5px;
+
+  color: #7c2f23;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   NEXT STEPS
+========================================= */
+
+.next-steps-section {
+  padding-top: 25px;
+
+  border-top: 1px solid #eee3da;
+}
+
+
+.next-steps-section > h2 {
+  margin: 0 0 15px;
+
+  color: #5b3028;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.next-steps-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 11px;
+}
+
+
+.next-step-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 13px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 12px;
+}
+
+
+.next-step-number {
+  width: 30px;
+
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #f8e9d8;
+
+  color: #8a3928;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.next-step-card strong {
+  display: block;
+
+  color: #5b3028;
+
+  font-size: 11px;
+}
+
+
+.next-step-card p {
+  margin: 4px 0 0;
+
+  color: #99867b;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   ACTION
+========================================= */
+
+.verification-actions {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 28px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+
+.verification-home-button {
+  min-height: 44px;
+
+  min-width: 155px;
+
+  padding: 0 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 14px rgba(124, 47, 35, 0.16);
+
+  transition: 0.2s ease;
+}
+
+
+.verification-home-button:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.verification-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 20px;
+
+  color: #99867b;
+
+  font-size: 10px;
+
+  text-align: center;
+}
+
+
+.verification-footer svg {
+  flex-shrink: 0;
+
+  color: #9b624e;
+}
+
+
+.verification-footer p {
+  margin: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .priest-verification-page {
+    padding: 12px;
+  }
+
+
+  .priest-verification-header {
+    height: 65px;
+
+    margin-bottom: 8px;
+  }
+
+
+  .priest-verification-card {
+    padding: 24px 18px;
+
+    border-radius: 18px;
+  }
+
+
+  .verification-success-icon {
+    width: 58px;
+
+    height: 58px;
+  }
+
+
+  .verification-heading h1 {
+    font-size: 22px;
+  }
+
+
+  .verification-heading p {
+    font-size: 12px;
+  }
+
+
+  .status-title-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+
+  .timeline-item {
+    gap: 10px;
+  }
+
+
+  .next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .verification-footer {
+    align-items: flex-start;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .priest-verification-card {
+    padding: 20px 14px;
+  }
+
+
+  .application-id-content strong {
+    font-size: 13px;
+  }
+
+}
+
+/* =========================================
+   VERIFICATION ACTION GROUP
+========================================= */
+
+.verification-action-group {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+
+.verification-secondary-button {
+  min-height: 44px;
+
+  padding: 0 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  border-radius: 11px;
+
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.verification-secondary-button:hover {
+  background: #f8f0e9;
+}
+
+
+@media (max-width: 600px) {
+
+  .verification-action-group {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+
+  .verification-action-group
+  .verification-home-button,
+  .verification-action-group
+  .verification-secondary-button {
+    width: 100%;
+  }
+
+}
+/* =========================================================
+   POOJAMITRA LOGO - PRIEST VERIFICATION
+   Keep logo small and prevent global CSS from enlarging it
+========================================================= */
+
+.priest-verification-page .logo-crop {
+  width: 150px !important;
+  height: 70px !important;
+
+  min-width: 150px !important;
+  min-height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  flex: 0 0 150px !important;
+
+  transform: none !important;
+}
+
+.priest-verification-page .logo-crop img {
+  width: 150px !important;
+  height: 70px !important;
+
+  min-width: 150px !important;
+  min-height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  position: relative !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .priest-verification-page .logo-crop {
+    width: 120px !important;
+    height: 60px !important;
+
+    min-width: 120px !important;
+    min-height: 60px !important;
+
+    max-width: 120px !important;
+    max-height: 60px !important;
+
+    flex: 0 0 120px !important;
+  }
+
+  .priest-verification-page .logo-crop img {
+    width: 120px !important;
+    height: 60px !important;
+
+    min-width: 120px !important;
+    min-height: 60px !important;
+
+    max-width: 120px !important;
+    max-height: 60px !important;
+  }
+
+}

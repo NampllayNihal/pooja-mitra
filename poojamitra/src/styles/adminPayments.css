@@ -1,0 +1,912 @@
+* {
+  box-sizing: border-box;
+}
+
+.admin-payments-page {
+  min-height: 100vh;
+  background: #f7f7f5;
+  color: #292929;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= SIDEBAR ================= */
+
+.admin-payment-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e8e5df;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.admin-payment-sidebar-header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  border-bottom: 1px solid #eeeae3;
+}
+
+.admin-payment-brand {
+  font-size: 25px;
+  font-weight: 700;
+  color: #641f28;
+  letter-spacing: -0.5px;
+}
+
+.admin-payment-sidebar-nav {
+  flex: 1;
+  padding: 18px 12px;
+  overflow-y: auto;
+}
+
+.admin-payment-nav-item {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #66615d;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px 14px;
+  margin-bottom: 4px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.admin-payment-nav-item:hover {
+  background: #f8f0e9;
+  color: #641f28;
+}
+
+.admin-payment-nav-item.active {
+  background: #641f28;
+  color: #ffffff;
+}
+
+.admin-payment-logout {
+  margin: 12px;
+  border: 1px solid #eadbd4;
+  background: #fff8f5;
+  color: #641f28;
+  border-radius: 9px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================= MAIN ================= */
+
+.admin-payment-main {
+  margin-left: 250px;
+  padding: 28px 32px 50px;
+  min-height: 100vh;
+}
+
+.admin-payment-topbar {
+  margin-bottom: 20px;
+}
+
+.admin-payment-back-button {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eadfd8;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #7e2a2a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-payment-back-button:hover {
+  background: #f8eee8;
+  border-color: #d9bcae;
+  transform: translateX(-2px);
+}
+
+.admin-payment-heading {
+  margin-bottom: 25px;
+}
+
+.admin-payment-heading h1 {
+  margin: 0 0 7px;
+  font-size: 30px;
+  color: #292929;
+}
+
+.admin-payment-heading p {
+  margin: 0;
+  color: #77716c;
+  font-size: 14px;
+}
+
+/* ================= STATS ================= */
+
+.admin-payment-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.admin-payment-stat-card {
+  background: #ffffff;
+  border: 1px solid #e9e5df;
+  border-radius: 11px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.admin-payment-stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 9px;
+  background: #f8eee8;
+  color: #641f28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.admin-payment-stat-card span {
+  display: block;
+  font-size: 11px;
+  color: #7b756f;
+  margin-bottom: 5px;
+  white-space: normal;
+}
+
+.admin-payment-stat-card strong {
+  display: block;
+  font-size: 19px;
+  color: #292929;
+  white-space: nowrap;
+}
+
+.admin-payment-stat-card > div:last-child {
+  min-width: 0;
+}
+
+/* ================= TOOLBAR ================= */
+
+.admin-payment-toolbar {
+  background: #ffffff;
+  border: 1px solid #e8e3dd;
+  border-radius: 11px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-payment-search {
+  height: 42px;
+  border: 1px solid #ddd8d2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 12px;
+  flex: 1;
+  max-width: 520px;
+  color: #8a847e;
+}
+
+.admin-payment-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+}
+
+.admin-payment-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-payment-filters select {
+  height: 42px;
+  min-width: 145px;
+  padding: 0 12px;
+  border: 1px solid #ddd8d2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #4d4844;
+  outline: none;
+  font-size: 13px;
+}
+
+.admin-payment-reset {
+  height: 42px;
+  padding: 0 13px;
+  border: 1px solid #dfcfc8;
+  border-radius: 8px;
+  background: #fff8f5;
+  color: #641f28;
+  cursor: pointer;
+}
+
+/* ================= TABLE ================= */
+
+.admin-payment-table-wrapper {
+  background: #ffffff;
+  border: 1px solid #e8e3dd;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.admin-payment-section-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee9e4;
+}
+
+.admin-payment-section-header h2 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.admin-payment-section-header p {
+  margin: 0;
+  font-size: 13px;
+  color: #817b75;
+}
+
+.admin-payment-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1250px;
+}
+
+.admin-payment-table th {
+  background: #faf8f5;
+  color: #6e6862;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 14px 15px;
+  border-bottom: 1px solid #e8e3dd;
+  white-space: nowrap;
+}
+
+.admin-payment-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eeeae5;
+  font-size: 13px;
+  color: #4e4945;
+  vertical-align: middle;
+}
+
+.admin-payment-table tbody tr:hover {
+  background: #fffcf9;
+}
+
+.admin-payment-id {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-payment-id-icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 8px;
+  background: #f8eee8;
+  color: #641f28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.admin-payment-id strong {
+  display: block;
+  color: #302d2a;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.admin-payment-id span {
+  display: block;
+  color: #8a837c;
+  font-size: 10px;
+}
+
+.admin-payment-booking-id {
+  color: #641f28;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.admin-payment-customer {
+  color: #3d3935;
+  white-space: nowrap;
+}
+
+.admin-payment-service {
+  max-width: 180px;
+  line-height: 1.4;
+}
+
+.admin-payment-amount {
+  color: #641f28;
+  white-space: nowrap;
+}
+
+.admin-payment-status {
+  border-radius: 20px;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-payment-status.successful {
+  background: #edf8ef;
+  color: #28703a;
+}
+
+.admin-payment-status.pending {
+  background: #fff7e7;
+  color: #9a6b13;
+}
+
+.admin-payment-status.failed {
+  background: #fff0f0;
+  color: #ad3434;
+}
+
+.admin-payment-status.refunded {
+  background: #f0eef8;
+  color: #65548e;
+}
+
+.admin-payment-date {
+  display: block;
+  max-width: 135px;
+  line-height: 1.4;
+  font-size: 11px;
+  color: #706a65;
+}
+
+.admin-payment-view-button {
+  border: 1px solid #ded8d2;
+  background: #ffffff;
+  color: #5f5954;
+  border-radius: 7px;
+  padding: 8px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.admin-payment-view-button:hover {
+  background: #f8f0eb;
+  color: #641f28;
+}
+
+.admin-payment-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #77716b;
+}
+
+.admin-payment-empty svg {
+  color: #9b928a;
+  margin-bottom: 10px;
+}
+
+.admin-payment-empty h3 {
+  margin: 0 0 5px;
+  color: #393532;
+}
+
+.admin-payment-empty p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* ================= MOBILE LIST ================= */
+
+.admin-payment-mobile-list {
+  display: none;
+}
+
+.admin-payment-card {
+  background: #ffffff;
+  border: 1px solid #e7e1db;
+  border-radius: 11px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.admin-payment-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eee9e4;
+}
+
+.admin-payment-card-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  padding: 15px 0;
+}
+
+.admin-payment-card-details span {
+  display: block;
+  font-size: 11px;
+  color: #8b847d;
+  margin-bottom: 4px;
+}
+
+.admin-payment-card-details strong {
+  display: block;
+  font-size: 13px;
+  color: #3e3a36;
+  line-height: 1.35;
+}
+
+.admin-payment-mobile-view {
+  width: 100%;
+  border: 1px solid #dfd6d0;
+  background: #fffaf7;
+  color: #641f28;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= MODAL ================= */
+
+.admin-payment-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(25, 20, 18, 0.48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 3000;
+}
+
+.admin-payment-modal {
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 13px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.admin-payment-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ece7e2;
+}
+
+.admin-payment-modal-header h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #302c29;
+}
+
+.admin-payment-modal-header p {
+  margin: 0;
+  font-size: 12px;
+  color: #817a74;
+}
+
+.admin-payment-modal-header > button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ded8d2;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #6d6761;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ================= MODAL STATUS ================= */
+
+.admin-payment-modal-status {
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-bottom: 1px solid #eee9e4;
+}
+
+.admin-payment-large-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 11px;
+  background: #f8eee8;
+  color: #641f28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-payment-modal-status > div:nth-child(2) {
+  flex: 1;
+}
+
+.admin-payment-modal-status > div:nth-child(2) span {
+  display: block;
+  font-size: 11px;
+  color: #817a74;
+  margin-bottom: 4px;
+}
+
+.admin-payment-modal-status > div:nth-child(2) strong {
+  display: block;
+  font-size: 22px;
+  color: #641f28;
+}
+
+/* ================= DETAIL GRID ================= */
+
+.admin-payment-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+.admin-payment-detail-grid > div {
+  background: #faf8f5;
+  border: 1px solid #eee8e2;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.admin-payment-detail-grid span {
+  display: block;
+  color: #817a74;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.admin-payment-detail-grid strong {
+  display: block;
+  color: #393531;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* ================= BREAKDOWN ================= */
+
+.admin-payment-breakdown {
+  margin: 0 20px 20px;
+  padding: 16px;
+  background: #faf8f5;
+  border: 1px solid #eee8e2;
+  border-radius: 9px;
+}
+
+.admin-payment-breakdown h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: #38332f;
+}
+
+.admin-payment-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 9px 0;
+  border-bottom: 1px solid #e9e3dd;
+  font-size: 13px;
+}
+
+.admin-payment-breakdown-row span {
+  color: #716b65;
+}
+
+.admin-payment-breakdown-row strong {
+  color: #3c3733;
+}
+
+.admin-payment-breakdown-row.final {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.admin-payment-breakdown-row.final span,
+.admin-payment-breakdown-row.final strong {
+  color: #641f28;
+  font-weight: 700;
+}
+
+/* ================= MODAL FOOTER ================= */
+
+.admin-payment-modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #ece7e2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.admin-payment-secondary-button {
+  border: 1px solid #ddd5cf;
+  background: white;
+  color: #514c48;
+  padding: 11px 17px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-payment-primary-button {
+  border: none;
+  background: #641f28;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= MOBILE HEADER ================= */
+
+.admin-payment-mobile-header {
+  display: none;
+}
+
+.admin-payment-mobile-close {
+  display: none;
+}
+
+.admin-payment-mobile-spacer {
+  width: 22px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1450px) {
+  .admin-payment-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1250px) {
+  .admin-payment-sidebar {
+    width: 220px;
+  }
+
+  .admin-payment-main {
+    margin-left: 220px;
+    padding: 25px;
+  }
+
+  .admin-payment-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+  .admin-payment-sidebar {
+    width: 280px;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .admin-payment-sidebar.admin-payment-sidebar-open {
+    transform: translateX(0);
+  }
+
+  .admin-payment-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 900;
+  }
+
+  .admin-payment-mobile-header {
+    height: 62px;
+    background: #ffffff;
+    border-bottom: 1px solid #e7e2dc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    z-index: 800;
+  }
+
+  .admin-payment-mobile-brand {
+    color: #641f28;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .admin-payment-menu-button {
+    border: none;
+    background: transparent;
+    color: #5f5954;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .admin-payment-mobile-close {
+    display: flex;
+    border: none;
+    background: transparent;
+    color: #6a645f;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .admin-payment-sidebar-header {
+    justify-content: space-between;
+  }
+
+  .admin-payment-main {
+    margin-left: 0;
+    padding: 20px 15px 35px;
+  }
+
+  .admin-payment-heading h1 {
+    font-size: 25px;
+  }
+
+  .admin-payment-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .admin-payment-stat-card {
+    padding: 13px;
+  }
+
+  .admin-payment-stat-card strong {
+    font-size: 17px;
+  }
+
+  .admin-payment-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-payment-search {
+    max-width: none;
+  }
+
+  .admin-payment-filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-payment-filters select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .admin-payment-reset {
+    grid-column: 1 / -1;
+  }
+
+  .admin-payment-table-wrapper {
+    display: none;
+  }
+
+  .admin-payment-mobile-list {
+    display: block;
+  }
+
+  .admin-payment-modal-overlay {
+    padding: 10px;
+    align-items: flex-end;
+  }
+
+  .admin-payment-modal {
+    max-height: 92vh;
+    border-radius: 13px 13px 0 0;
+  }
+
+  .admin-payment-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-payment-modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .admin-payment-modal-footer button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-payment-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-payment-stat-card {
+    min-height: 76px;
+  }
+
+  .admin-payment-card-details {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-payment-modal-status {
+    flex-wrap: wrap;
+  }
+
+  .admin-payment-modal-status .admin-payment-status {
+    margin-left: 65px;
+  }
+}

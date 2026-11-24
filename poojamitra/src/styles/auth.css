@@ -1,0 +1,2143 @@
+/* =========================================================
+
+   POOJAMITRA AUTH PAGE
+
+========================================================= */
+
+
+
+.auth-page {
+
+  min-height: 100vh;
+
+  min-height: 100svh;
+
+
+
+  position: relative;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  padding: 24px 18px;
+
+
+
+  overflow-x: hidden;
+
+
+
+  background:
+
+    radial-gradient(
+
+      circle at 50% 10%,
+
+      #fffdf5 0%,
+
+      #fff8e9 45%,
+
+      #f7ead0 100%
+
+    );
+
+
+
+  box-sizing: border-box;
+
+}
+
+
+
+/* =========================================================
+
+   DECORATIVE BORDER
+
+========================================================= */
+
+
+
+.auth-page::before {
+
+  content: "";
+
+
+
+  position: absolute;
+
+
+
+  inset: 18px;
+
+
+
+  border: 1px solid rgba(180, 120, 30, 0.22);
+
+
+
+  border-radius: 30px;
+
+
+
+  pointer-events: none;
+
+}
+
+
+
+/* =========================================================
+
+   DECORATIONS
+
+========================================================= */
+
+
+
+.auth-decoration {
+
+  position: absolute;
+
+
+
+  color: #c58a28;
+
+
+
+  opacity: 0.12;
+
+
+
+  pointer-events: none;
+
+
+
+  z-index: 0;
+
+}
+
+
+
+.auth-decoration-top {
+
+  top: -25px;
+
+  right: -20px;
+
+
+
+  font-size: 100px;
+
+}
+
+
+
+.auth-decoration-bottom {
+
+  bottom: -25px;
+
+  left: -10px;
+
+
+
+  font-size: 90px;
+
+}
+
+
+
+/* =========================================================
+
+   AUTH CARD
+
+========================================================= */
+
+
+
+.auth-card {
+
+  width: min(100%, 640px);
+
+
+
+  min-height: 720px;
+
+
+
+  position: relative;
+
+
+
+  z-index: 2;
+
+
+
+  display: flex;
+
+
+
+  flex-direction: column;
+
+
+
+  align-items: center;
+
+
+
+  padding: 35px 55px 28px;
+
+
+
+  box-sizing: border-box;
+
+
+
+  border: 1px solid #ead8bb;
+
+
+
+  border-radius: 28px;
+
+
+
+  background:
+
+    rgba(255, 253, 248, 0.96);
+
+
+
+  box-shadow:
+
+    0 18px 50px rgba(80, 30, 10, 0.10);
+
+}
+
+
+
+/* =========================================================
+
+   LOGO CONTAINER
+
+========================================================= */
+
+
+
+.login-logo-container {
+
+  width: 100%;
+
+
+
+  height: 145px;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  margin-bottom: 8px;
+
+
+
+  overflow: hidden;
+
+
+
+  position: relative;
+
+
+
+  flex-shrink: 0;
+
+}
+
+
+
+/*
+
+   IMPORTANT:
+
+   Logo.jsx creates:
+
+
+
+   .logo-crop
+
+       .logo-image
+
+
+
+   The container controls the available area.
+
+*/
+
+
+
+.login-logo-container .logo-crop {
+
+  width: 250px;
+
+
+
+  height: 130px;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  overflow: hidden;
+
+
+
+  flex-shrink: 0;
+
+}
+
+
+
+/* Actual logo image */
+
+
+
+.login-logo-container .logo-image {
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  height: 100%;
+
+
+
+  object-fit: contain;
+
+
+
+  object-position: center;
+
+
+
+  max-width: 100%;
+
+
+
+  max-height: 100%;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+  mix-blend-mode: multiply;
+
+}
+
+
+
+/* =========================================================
+
+   BRAND HEADING
+
+========================================================= */
+
+
+
+.auth-heading {
+
+  width: 100%;
+
+
+
+  text-align: center;
+
+
+
+  margin-bottom: 22px;
+
+
+
+  position: relative;
+
+
+
+  z-index: 3;
+
+}
+
+
+
+.welcome-small {
+
+  margin: 0 0 4px;
+
+
+
+  color: #d48616;
+
+
+
+  font-family: Arial, sans-serif;
+
+
+
+  font-size: 13px;
+
+
+
+  font-weight: 600;
+
+}
+
+
+
+.auth-heading h1 {
+
+  margin: 0;
+
+
+
+  color: #9aa2ad;
+
+
+
+  font-size: 32px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0;
+
+}
+
+
+
+.heading-divider {
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 10px;
+
+
+
+  margin: 9px 0 10px;
+
+
+
+  color: #9aa2ad;
+
+
+
+  font-size: 13px;
+
+}
+
+
+
+.heading-divider span:nth-child(2) {
+
+  font-size: 25px;
+
+
+
+  color: #9aa2ad;
+
+}
+
+
+
+.welcome-description {
+
+  margin: 0;
+
+
+
+  color: #806f65;
+
+
+
+  font-family: Arial, sans-serif;
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.6;
+
+}
+
+
+
+/* =========================================================
+
+   ROLE TABS
+
+========================================================= */
+
+
+
+.role-tabs {
+
+  width: 100%;
+
+
+
+  height: 52px;
+
+
+
+  display: flex;
+
+
+
+  margin: 18px 0 24px;
+
+
+
+  border: 1px solid #8b1e23;
+
+
+
+  border-radius: 7px;
+
+
+
+  overflow: hidden;
+
+
+
+  background: #ffffff;
+
+
+
+  box-sizing: border-box;
+
+
+
+  position: relative;
+
+
+
+  z-index: 3;
+
+}
+
+
+
+.role-tab {
+
+  flex: 1;
+
+
+
+  height: 100%;
+
+
+
+  border: none;
+
+
+
+  background: #ffffff;
+
+
+
+  color: #8b1e23;
+
+
+
+  font-size: 15px;
+
+
+
+  font-weight: 600;
+
+
+
+  cursor: pointer;
+
+
+
+  transition: all 0.2s ease;
+
+}
+
+
+
+.role-tab:not(:last-child) {
+
+  border-right: 1px solid #8b1e23;
+
+}
+
+
+
+.role-tab.active {
+
+  background: #8b1e23;
+
+
+
+  color: #ffffff;
+
+}
+
+
+
+.role-tab:hover:not(.active) {
+
+  background: #fff5e6;
+
+}
+
+
+
+/* =========================================================
+
+   LOGIN TYPE HEADING
+
+========================================================= */
+
+
+
+.login-type-heading {
+
+  width: 100%;
+
+
+
+  margin-bottom: 20px;
+
+
+
+  position: relative;
+
+
+
+  z-index: 3;
+
+}
+
+
+
+.login-type-heading h2 {
+
+  margin: 0 0 7px;
+
+
+
+  color: #3a1b16;
+
+
+
+  font-size: 22px;
+
+
+
+  font-weight: 700;
+
+}
+
+
+
+.login-type-heading p {
+
+  margin: 0;
+
+
+
+  color: #6f625d;
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.5;
+
+}
+
+
+
+/* =========================================================
+
+   FORM
+
+========================================================= */
+
+
+
+.form-section {
+
+  width: 100%;
+
+
+
+  position: relative;
+
+
+
+  z-index: 3;
+
+}
+
+
+
+.form-section label {
+
+  display: block;
+
+
+
+  margin-bottom: 8px;
+
+
+
+  color: #3a1b16;
+
+
+
+  font-size: 13px;
+
+
+
+  font-weight: 600;
+
+}
+
+
+
+/* =========================================================
+
+   MOBILE INPUT
+
+========================================================= */
+
+
+
+.mobile-input-wrapper {
+
+  width: 100%;
+
+
+
+  height: 54px;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  border: 1px solid #d9c49f;
+
+
+
+  border-radius: 11px;
+
+
+
+  background: #fffdf8;
+
+
+
+  box-sizing: border-box;
+
+
+
+  transition:
+
+    border-color 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+.mobile-input-wrapper:focus-within {
+
+  border-color: #8b1e23;
+
+
+
+  box-shadow:
+
+    0 0 0 3px rgba(139, 30, 35, 0.07);
+
+}
+
+
+
+.country-code {
+
+  padding-left: 15px;
+
+
+
+  color: #111111;
+
+
+
+  font-size: 14px;
+
+
+
+  font-weight: 600;
+
+}
+
+
+
+.country-divider {
+
+  width: 1px;
+
+
+
+  height: 24px;
+
+
+
+  margin: 0 12px;
+
+
+
+  background: #ddceb5;
+
+}
+
+
+
+.mobile-input-wrapper input {
+
+  flex: 1;
+
+
+
+  width: 100%;
+
+
+
+  height: 100%;
+
+
+
+  border: none;
+
+
+
+  outline: none;
+
+
+
+  background: transparent;
+
+
+
+  color: #111111 !important;
+
+
+
+  -webkit-text-fill-color: #111111;
+
+
+
+  font-size: 15px;
+
+}
+
+
+
+.mobile-input-wrapper input::placeholder {
+
+  color: #a89d92 !important;
+
+
+
+  opacity: 1;
+
+
+
+  -webkit-text-fill-color: #a89d92;
+
+}
+
+
+
+.admin-login-form label:not(:first-child) {
+
+  margin-top: 16px;
+
+}
+
+
+
+.admin-input-wrapper {
+
+  width: 100%;
+
+
+
+  height: 54px;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  padding: 0 15px;
+
+
+
+  border: 1px solid #d9c49f;
+
+
+
+  border-radius: 11px;
+
+
+
+  background: #fffdf8;
+
+
+
+  box-sizing: border-box;
+
+
+
+  transition:
+
+    border-color 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+.admin-input-wrapper:focus-within {
+
+  border-color: #8b1e23;
+
+
+
+  box-shadow:
+
+    0 0 0 3px rgba(139, 30, 35, 0.07);
+
+}
+
+
+
+.admin-input-wrapper input {
+
+  width: 100%;
+
+
+
+  height: 100%;
+
+
+
+  border: none;
+
+
+
+  outline: none;
+
+
+
+  background: transparent;
+
+
+
+  color: #111111;
+
+
+
+  font-size: 15px;
+
+}
+
+
+
+.admin-input-wrapper input::placeholder {
+
+  color: #a89d92;
+
+
+
+  opacity: 1;
+
+}
+
+
+
+.valid-icon {
+
+  width: 22px;
+
+
+
+  height: 22px;
+
+
+
+  margin-right: 13px;
+
+
+
+  display: grid;
+
+
+
+  place-items: center;
+
+
+
+  border-radius: 50%;
+
+
+
+  background: #2e7d32;
+
+
+
+  color: #ffffff;
+
+
+
+  font-size: 12px;
+
+}
+
+
+
+.input-error {
+
+  margin-top: 6px;
+
+
+
+  color: #b3261e;
+
+
+
+  font-size: 11px;
+
+}
+
+
+
+.otp-note {
+
+  margin-top: 7px;
+
+
+
+  color: #8c7d70;
+
+
+
+  font-size: 10.5px;
+
+}
+
+
+
+/* =========================================================
+
+   SEND OTP
+
+========================================================= */
+
+
+
+.primary-button {
+
+  width: 100%;
+
+
+
+  min-height: 54px;
+
+
+
+  margin-top: 20px;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 14px;
+
+
+
+  border: none;
+
+
+
+  border-radius: 11px;
+
+
+
+  background: #8b1e23;
+
+
+
+  color: #ffffff;
+
+
+
+  font-size: 14px;
+
+
+
+  font-weight: 700;
+
+
+
+  cursor: pointer;
+
+
+
+  box-shadow:
+
+    0 7px 18px rgba(120, 16, 16, 0.17);
+
+
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.primary-button:hover {
+
+  background: #75171c;
+
+
+
+  transform: translateY(-1px);
+
+}
+
+
+
+.button-flower {
+
+  font-size: 16px;
+
+}
+
+
+
+/* =========================================================
+
+   OR DIVIDER
+
+========================================================= */
+
+
+
+.or-divider {
+
+  width: 100%;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  gap: 12px;
+
+
+
+  margin: 22px 0;
+
+
+
+  color: #938578;
+
+
+
+  font-size: 11px;
+
+}
+
+
+
+.or-divider::before,
+
+.or-divider::after {
+
+  content: "";
+
+
+
+  flex: 1;
+
+
+
+  height: 1px;
+
+
+
+  background: #dfd1bb;
+
+}
+
+
+
+/* =========================================================
+
+   GUEST
+
+========================================================= */
+
+
+
+.guest-button {
+
+  width: 100%;
+
+
+
+  min-height: 50px;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 9px;
+
+
+
+  border: 1px solid #d8a94f;
+
+
+
+  border-radius: 11px;
+
+
+
+  background: #fffaf0;
+
+
+
+  color: #111111;
+
+
+
+  font-size: 13px;
+
+
+
+  font-weight: 600;
+
+
+
+  cursor: pointer;
+
+
+
+  transition: 0.2s ease;
+
+}
+
+
+
+.guest-button:hover {
+
+  background: #fff3da;
+
+}
+
+
+
+/* =========================================================
+
+   REGISTER
+
+========================================================= */
+
+
+
+.register-text {
+
+  margin: 17px 0 0;
+
+
+
+  text-align: center;
+
+
+
+  color: #5f514c;
+
+
+
+  font-size: 13px;
+
+}
+
+
+
+.register-link {
+
+  border: none;
+
+
+
+  background: transparent;
+
+
+
+  padding: 0;
+
+
+
+  color: #8b1e23;
+
+
+
+  font-size: inherit;
+
+
+
+  font-weight: 700;
+
+
+
+  text-decoration: underline;
+
+
+
+  cursor: pointer;
+
+}
+
+
+
+.register-link:hover {
+
+  color: #6f151a;
+
+}
+
+
+
+.priest-register-text {
+
+  margin-top: 20px;
+
+}
+
+
+
+/* =========================================================
+
+   TERMS
+
+========================================================= */
+
+
+
+.terms-container {
+
+  width: 100%;
+
+
+
+  margin-top: auto;
+
+
+
+  padding-top: 24px;
+
+
+
+  text-align: center;
+
+
+
+  color: #8b7b6e;
+
+
+
+  font-size: 10px;
+
+}
+
+
+
+.terms-container > p {
+
+  margin-bottom: 6px;
+
+}
+
+
+
+.terms-links {
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 8px;
+
+}
+
+
+
+.terms-links button {
+
+  border: none;
+
+
+
+  background: transparent;
+
+
+
+  color: #8b1e23;
+
+
+
+  font-size: 10px;
+
+
+
+  cursor: pointer;
+
+}
+
+
+
+/* =========================================================
+
+   OTP
+
+========================================================= */
+
+
+
+.otp-card {
+
+  justify-content: flex-start;
+
+}
+
+
+
+.back-button {
+
+  position: absolute;
+
+
+
+  top: 20px;
+
+
+
+  left: 18px;
+
+
+
+  width: 40px;
+
+
+
+  height: 40px;
+
+
+
+  display: grid;
+
+
+
+  place-items: center;
+
+
+
+  border: none;
+
+
+
+  background: transparent;
+
+
+
+  color: #8b1e23;
+
+
+
+  border-radius: 50%;
+
+
+
+  cursor: pointer;
+
+
+
+  z-index: 5;
+
+}
+
+
+
+.back-button:hover {
+
+  background: rgba(139, 30, 35, 0.06);
+
+}
+
+
+
+.otp-heading {
+
+  text-align: center;
+
+
+
+  margin-bottom: 30px;
+
+}
+
+
+
+.otp-heading h1 {
+
+  color: #8b1e23;
+
+
+
+  font-size: 27px;
+
+
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.otp-heading p {
+
+  color: #806f65;
+
+
+
+  font-size: 13px;
+
+}
+
+
+
+.otp-heading strong {
+
+  display: block;
+
+
+
+  margin-top: 7px;
+
+
+
+  color: #111111;
+
+
+
+  font-size: 14px;
+
+}
+
+
+
+.otp-inputs {
+
+  display: flex;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 12px;
+
+
+
+  margin-bottom: 18px;
+
+}
+
+
+
+.otp-inputs input {
+
+  width: 58px;
+
+
+
+  height: 62px;
+
+
+
+  text-align: center;
+
+
+
+  border: 1px solid #d8c19a;
+
+
+
+  border-radius: 12px;
+
+
+
+  outline: none;
+
+
+
+  background: #fffdf8;
+
+
+
+  color: #111111;
+
+
+
+  font-size: 24px;
+
+
+
+  font-weight: 600;
+
+}
+
+
+
+.otp-inputs input:focus {
+
+  border-color: #8b1e23;
+
+
+
+  box-shadow:
+
+    0 0 0 3px rgba(139, 30, 35, 0.08);
+
+}
+
+
+
+.resend-text {
+
+  text-align: center;
+
+
+
+  color: #81746a;
+
+
+
+  font-size: 12px;
+
+}
+
+
+
+.resend-text strong {
+
+  color: #8b1e23;
+
+}
+
+
+
+.resend-text button {
+
+  border: none;
+
+
+
+  background: transparent;
+
+
+
+  color: #8b1e23;
+
+
+
+  font-weight: 700;
+
+
+
+  cursor: pointer;
+
+}
+
+
+
+.otp-role-label {
+
+  display: block;
+
+
+
+  margin-top: 10px;
+
+
+
+  color: #8b1e23;
+
+
+
+  font-size: 12px;
+
+
+
+  font-weight: 700;
+
+}
+
+
+
+/* =========================================================
+
+   MOBILE
+
+========================================================= */
+
+
+
+@media (max-width: 700px) {
+
+  .auth-page {
+
+    padding: 20px 12px;
+
+  }
+
+
+
+  .auth-page::before {
+
+    inset: 10px;
+
+
+
+    border-radius: 22px;
+
+  }
+
+
+
+  .auth-card {
+
+    width: min(100%, 440px);
+
+
+
+    min-height: 680px;
+
+
+
+    padding: 28px 22px 25px;
+
+
+
+    border-radius: 24px;
+
+  }
+
+
+
+  .login-logo-container {
+
+    height: 125px;
+
+  }
+
+
+
+  .login-logo-container .logo-crop {
+
+    width: 225px;
+
+
+
+    height: 115px;
+
+  }
+
+
+
+  .role-tabs {
+
+    margin-top: 16px;
+
+  }
+
+}
+
+
+
+/* =========================================================
+
+   SMALL MOBILE
+
+========================================================= */
+
+
+
+@media (max-width: 400px) {
+
+  .auth-card {
+
+    padding: 25px 16px 22px;
+
+  }
+
+
+
+  .login-logo-container {
+
+    height: 115px;
+
+  }
+
+
+
+  .login-logo-container .logo-crop {
+
+    width: 200px;
+
+
+
+    height: 105px;
+
+  }
+
+
+
+  .auth-heading h1 {
+
+    font-size: 28px;
+
+  }
+
+
+
+  .role-tab {
+
+    font-size: 14px;
+
+  }
+
+
+
+  .otp-inputs {
+
+    gap: 7px;
+
+  }
+
+
+
+  .otp-inputs input {
+
+    width: 52px;
+
+
+
+    height: 56px;
+
+  }
+
+}
+
+/* =========================================================
+   LOGIN LOGO - ACTUAL IMAGE ELEMENT
+   Logo.jsx uses a plain <img> inside .logo-crop.
+   Keep the existing approved login logo size.
+========================================================= */
+
+.login-logo-container .logo-crop img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  max-width: 100% !important;
+  max-height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  mix-blend-mode: multiply;
+}
+
+
+/* =========================================================
+   ADMIN LOGIN
+========================================================= */
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.admin-login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #3a1b16;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-input-wrapper {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #d9c49f;
+  border-radius: 11px;
+  background: #fffdf8;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-input-wrapper:focus-within {
+  border-color: #8b1e23;
+  box-shadow:
+    0 0 0 3px rgba(139, 30, 35, 0.07);
+}
+
+.admin-input-wrapper input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.admin-input-wrapper input::placeholder {
+  color: #a89d92 !important;
+  opacity: 1;
+  -webkit-text-fill-color: #a89d92;
+}
+
+.admin-login-form label:not(:first-child) {
+  margin-top: 16px;
+}
+
+.admin-login-form .primary-button {
+  margin-top: 20px;
+}
+
+
+/* =========================================================
+   ADMIN MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .admin-login-form {
+    width: 100%;
+  }
+}
+
+/* OTP input visibility and typing fix */
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.otp-inputs .otp-single-input {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: 58px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border: 1px solid #d9b98c;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #222222;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 8px;
+  outline: none;
+  cursor: text;
+}
+
+.otp-inputs .otp-single-input:focus {
+  border-color: #8e1d24;
+  box-shadow: 0 0 0 3px rgba(142, 29, 36, 0.12);
+}
+
+.otp-inputs .otp-single-input:disabled {
+  background: #f3f3f3;
+  cursor: not-allowed;
+}
+
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.otp-inputs input {
+  display: block;
+  width: 54px;
+  min-width: 0;
+  height: 58px;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid #d9b98c;
+  border-radius: 10px;
+  background: #fff;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: normal;
+  outline: none;
+  cursor: text;
+}
+
+.otp-inputs input:focus {
+  border-color: #8e1d24;
+  box-shadow: 0 0 0 3px rgba(142, 29, 36, 0.12);
+}
+
+.otp-inputs input:disabled {
+  background: #f3f3f3;
+  color: #555;
+  cursor: not-allowed;
+}
+
+@media (max-width: 420px) {
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-inputs input {
+    width: 48px;
+    height: 54px;
+  }
+}

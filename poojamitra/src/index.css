@@ -1,0 +1,246 @@
+:root {
+  --text: #4b2923;
+  --text-h: #08060d;
+
+  --bg: #fffaf0;
+
+  --border: #e5d9cc;
+
+  --code-bg: #f4f3ec;
+
+  --accent: #8b1e23;
+  --accent-bg: rgba(139, 30, 35, 0.1);
+  --accent-border: rgba(139, 30, 35, 0.5);
+
+  --social-bg: rgba(244, 243, 236, 0.5);
+
+  --shadow:
+    rgba(80, 30, 10, 0.1) 0 10px 15px -3px,
+    rgba(80, 30, 10, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  /* PoojaMitra theme variables */
+  --maroon: #8b1e23;
+  --gold: #c58a28;
+  --muted: #806f65;
+  --border-soft: #eadfd5;
+
+  font: 16px/145% var(--sans);
+
+  letter-spacing: 0.18px;
+
+  /*
+    Keep PoojaMitra in light mode.
+    Do NOT automatically switch to dark mode
+    based on the browser/Windows theme.
+  */
+  color-scheme: light;
+
+  color: var(--text);
+  background: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  min-width: 320px;
+  min-height: 100%;
+
+  background: #fffaf0;
+
+  color: #4b2923;
+
+  font-family: var(--sans);
+}
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+
+  min-height: 100svh;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  border-inline: 1px solid var(--border);
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  background: #fffaf0;
+}
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+
+  color: var(--text-h);
+
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 56px;
+
+  letter-spacing: -1.68px;
+
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 24px;
+
+  line-height: 118%;
+
+  letter-spacing: -0.24px;
+
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0;
+}
+
+/* =========================================================
+   FORM ELEMENTS
+   GLOBAL BLACK/DARK TYPED TEXT FIX
+========================================================= */
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+/*
+  Important:
+  Typed text is dark/black.
+  Placeholder text is controlled separately.
+*/
+
+input,
+textarea,
+select {
+  color: #111111;
+}
+
+/* Placeholder remains soft gray */
+
+input::placeholder,
+textarea::placeholder {
+  color: #aa9b91;
+  opacity: 1;
+}
+
+/* Select options */
+
+select option {
+  color: #111111;
+  background: #ffffff;
+}
+
+/* Date input text */
+
+input[type="date"] {
+  color: #111111;
+}
+
+/* Number / tel / email / text */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+  color: #111111;
+}
+
+/* Autofill fix */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111111;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* =========================================================
+   CODE
+========================================================= */
+
+code,
+.counter {
+  font-family: var(--mono);
+
+  display: inline-flex;
+
+  border-radius: 4px;
+
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+
+  line-height: 135%;
+
+  padding: 4px 8px;
+
+  background: var(--code-bg);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

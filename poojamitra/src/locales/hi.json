@@ -1,0 +1,103 @@
+{
+  "common": {
+    "back": "वापस",
+    "continue": "जारी रखें",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "submit": "सबमिट करें",
+    "next": "अगला",
+    "previous": "पिछला",
+    "close": "बंद करें",
+    "loading": "लोड हो रहा है",
+    "required": "आवश्यक"
+  },
+
+  "navigation": {
+    "home": "होम",
+    "bookings": "मेरी बुकिंग",
+    "notifications": "सूचनाएं",
+    "profile": "प्रोफ़ाइल",
+    "settings": "सेटिंग्स",
+    "support": "सहायता",
+    "logout": "लॉग आउट"
+  },
+
+  "auth": {
+    "customer": "ग्राहक",
+    "priest": "पुजारी",
+    "mobileNumber": "मोबाइल नंबर",
+    "sendOtp": "OTP भेजें",
+    "verifyOtp": "OTP सत्यापित करें",
+    "continueGuest": "गेस्ट के रूप में जारी रखें",
+    "createAccount": "अकाउंट बनाएं",
+    "registerAsPriest": "पुजारी के रूप में पंजीकरण करें",
+    "enterOtp": "OTP दर्ज करें",
+    "resendOtp": "OTP फिर से भेजें"
+  },
+
+  "customer": {
+    "welcome": "PoojaMitra में आपका स्वागत है",
+    "bookPooja": "पूजा बुक करें",
+    "findPriest": "पुजारी खोजें",
+    "categories": "श्रेणियां",
+    "popularServices": "लोकप्रिय सेवाएं",
+    "upcomingBookings": "आगामी बुकिंग"
+  },
+
+  "priest": {
+    "registration": "पुजारी पंजीकरण",
+    "basicDetails": "मूल विवरण",
+    "professional": "व्यावसायिक विवरण",
+    "languages": "भाषाएं और विशेषज्ञताएं",
+    "location": "सेवा क्षेत्र",
+    "documents": "दस्तावेज़",
+    "verification": "सत्यापन",
+    "dashboard": "पुजारी डैशबोर्ड",
+    "professionalDetails": "व्यावसायिक विवरण",
+    "fullName": "पूरा नाम",
+    "email": "ईमेल पता",
+    "dateOfBirth": "जन्म तिथि",
+    "gender": "लिंग",
+    "address": "पता",
+    "city": "शहर",
+    "state": "राज्य",
+    "pincode": "पिनकोड",
+    "priestType": "पुजारी का प्रकार",
+    "qualification": "वैदिक / धार्मिक योग्यता",
+    "experience": "अनुभव के वर्ष",
+    "specialization": "मुख्य विशेषज्ञता",
+    "description": "व्यावसायिक विवरण",
+    "selectLanguage": "भाषाएं चुनें",
+    "selectSpecialization": "विशेषज्ञताएं चुनें"
+  },
+
+  "languages": {
+    "title": "भाषाएं और विशेषज्ञताएं",
+    "subtitle": "अपनी भाषाओं और पूजा संबंधी विशेषज्ञताओं के बारे में बताएं",
+    "spokenLanguages": "आपके द्वारा बोली जाने वाली भाषाएं",
+    "specializations": "आपकी विशेषज्ञताएं",
+    "english": "अंग्रेज़ी",
+    "telugu": "तेलुगु",
+    "hindi": "हिंदी",
+    "sanskrit": "संस्कृत",
+    "tamil": "तमिल",
+    "kannada": "कन्नड़",
+    "malayalam": "मलयालम",
+    "marathi": "मराठी",
+    "other": "अन्य"
+  },
+
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": "भाषा",
+    "selectLanguage": "भाषा चुनें",
+    "english": "अंग्रेज़ी",
+    "telugu": "तेलुगु",
+    "hindi": "हिंदी"
+  },
+
+  "messages": {
+    "languageChanged": "भाषा सफलतापूर्वक बदल दी गई",
+    "informationSaved": "जानकारी सफलतापूर्वक सहेजी गई"
+  }
+}

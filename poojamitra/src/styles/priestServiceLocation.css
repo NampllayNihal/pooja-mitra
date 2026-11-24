@@ -1,0 +1,855 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST SERVICE LOCATION
+   Existing Theme
+========================================= */
+
+.priest-service-location-page {
+  min-height: 100vh;
+
+  background: #faf7f2;
+
+  color: #4b211b;
+
+  padding: 20px;
+}
+
+.priest-service-location-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.service-location-header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.service-location-back {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #eaded2;
+
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.service-location-back:hover {
+  background: #f6eee5;
+
+  transform: translateX(-2px);
+}
+
+.service-location-header-spacer {
+  width: 42px;
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.service-location-progress {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  max-width: 850px;
+
+  margin: 10px auto 25px;
+}
+
+.service-progress-step {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.service-progress-step span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+.service-progress-step p {
+  margin: 0;
+}
+
+.service-progress-step.completed,
+.service-progress-step.active {
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+.service-progress-step.completed span {
+  background: #f1dfca;
+
+  border-color: #d5b28c;
+
+  color: #7c2f23;
+}
+
+.service-progress-step.active span {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+.service-progress-line {
+  width: 45px;
+
+  height: 1px;
+
+  background: #dccfc4;
+
+  margin: 0 8px;
+}
+
+.service-progress-line.active {
+  background: #b97855;
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.service-location-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow: 0 8px 30px rgba(83, 42, 28, 0.07);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.service-location-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 28px;
+}
+
+.service-location-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #8a3928;
+
+  background: #f8e9d8;
+}
+
+.service-location-title h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+.service-location-title p {
+  margin: 5px 0 0;
+
+  color: #8c756a;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.location-section {
+  margin-bottom: 30px;
+}
+
+.service-type-section,
+.availability-section {
+  padding-top: 25px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.location-section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+.location-heading-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #f8eee5;
+
+  color: #8a3928;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.location-section-heading h2 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.location-section-heading p {
+  margin: 4px 0 0;
+
+  color: #948177;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.location-form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+.location-form-group {
+  margin-bottom: 19px;
+}
+
+.location-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #5b3028;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.location-form-group label span {
+  color: #a9402d;
+}
+
+.location-input {
+  min-height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 13px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 11px;
+
+  transition: 0.2s ease;
+}
+
+.location-input svg {
+  flex-shrink: 0;
+
+  color: #9b6a53;
+
+  margin-right: 10px;
+}
+
+.location-input:focus-within {
+  border-color: #a5523b;
+
+  box-shadow: 0 0 0 3px rgba(165, 82, 59, 0.08);
+}
+
+.location-input input,
+.location-input select {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #4b2923;
+
+  font-family: inherit;
+
+  font-size: 14px;
+}
+
+.location-input input::placeholder {
+  color: #aa9b91;
+}
+
+.location-input select {
+  cursor: pointer;
+}
+
+.location-error {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #b33a2e;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   SERVICE TYPE
+========================================= */
+
+.service-type-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+.service-type-card {
+  min-height: 88px;
+
+  display: grid;
+
+  grid-template-columns: auto auto 1fr;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 13px;
+
+  color: #5b3028;
+
+  font-family: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.service-type-card:hover {
+  border-color: #b97855;
+
+  background: #fffaf5;
+}
+
+.service-type-card.selected {
+  background: #fff3e5;
+
+  border-color: #9b4b36;
+
+  color: #7c2f23;
+}
+
+.service-type-card > svg {
+  color: #9b6a53;
+}
+
+.service-type-card.selected > svg {
+  color: #7c2f23;
+}
+
+.service-type-card strong {
+  display: block;
+
+  font-size: 14px;
+}
+
+.service-type-card span:not(.service-type-check) {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #99867b;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+.service-type-check {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d7c7bb;
+
+  border-radius: 6px;
+
+  color: #fff;
+}
+
+.service-type-card.selected .service-type-check {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+}
+
+/* =========================================
+   DAYS
+========================================= */
+
+.days-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 10px;
+
+  margin-bottom: 22px;
+}
+
+.day-card {
+  min-height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 10px;
+
+  color: #5b3028;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.day-card:hover {
+  border-color: #b97855;
+
+  background: #fffaf5;
+}
+
+.day-card.selected {
+  background: #fff3e5;
+
+  border-color: #9b4b36;
+
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+.day-check {
+  width: 19px;
+  height: 19px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d7c7bb;
+
+  border-radius: 5px;
+}
+
+.day-card.selected .day-check {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+.preferred-time {
+  margin-bottom: 0;
+
+  max-width: 55%;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.service-location-actions {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.service-location-secondary,
+.service-location-primary {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.service-location-secondary {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+.service-location-secondary:hover {
+  background: #f8f0e9;
+}
+
+.service-location-primary {
+  min-width: 130px;
+
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  box-shadow: 0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+.service-location-primary:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.service-location-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+
+  color: #99867b;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.service-location-footer p {
+  margin: 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .service-location-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .service-progress-step p {
+    display: none;
+  }
+
+  .service-progress-line {
+    width: 35px;
+
+    margin: 0 6px;
+  }
+
+  .days-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .priest-service-location-page {
+    padding: 12px;
+  }
+
+  .service-location-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .service-location-title h1 {
+    font-size: 21px;
+  }
+
+  .service-location-title p {
+    font-size: 13px;
+  }
+
+  .location-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .service-type-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .days-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .preferred-time {
+    max-width: 100%;
+  }
+
+  .service-location-actions {
+    flex-direction: column-reverse;
+  }
+
+  .service-location-secondary,
+  .service-location-primary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .service-location-card {
+    padding: 18px 14px;
+  }
+
+  .service-location-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .service-location-title {
+    gap: 11px;
+  }
+}
+/* =========================================
+   FINAL 5-STEP WORKFLOW
+========================================= */
+
+.service-location-progress {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.service-progress-line {
+  width: 42px;
+  min-width: 42px;
+  margin: 0 7px;
+}
+
+/* =========================================
+   SERVICE LOCATION LOGO
+   Smaller and contained
+========================================= */
+
+.service-location-header .service-location-logo {
+  width: 170px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.service-location-header .service-location-logo img {
+  width: 170px;
+  height: 82px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .service-location-progress {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .service-progress-line {
+    width: 32px;
+    min-width: 32px;
+    margin: 0 5px;
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .service-location-header .service-location-logo {
+    width: 135px;
+    height: 65px;
+  }
+
+  .service-location-header .service-location-logo img {
+    width: 135px;
+    height: 65px;
+  }
+
+}

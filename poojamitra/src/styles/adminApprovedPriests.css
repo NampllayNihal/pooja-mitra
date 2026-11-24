@@ -1,0 +1,1373 @@
+/* =========================================
+   APPROVED PRIESTS ADMIN PAGE
+========================================= */
+
+.admin-approved-page {
+  min-height: 100vh;
+  background: #f7f7f8;
+  color: #252525;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   MOBILE HEADER
+========================================= */
+
+.approved-mobile-header {
+  display: none;
+}
+
+/* =========================================
+   MOBILE OVERLAY
+========================================= */
+
+.approved-mobile-overlay {
+  display: none;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.admin-approved-sidebar {
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e8e8e8;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-approved-brand {
+  height: 155px;
+  box-sizing: border-box;
+
+  padding: 36px 22px 20px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  flex-shrink: 0;
+}
+
+.admin-approved-brand span {
+  display: block;
+
+  font-size: 23px;
+  font-weight: 800;
+
+  color: #8d2f2f;
+}
+
+.admin-approved-brand small {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 12px;
+
+  color: #888888;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.admin-approved-nav {
+  flex: 1;
+
+  padding: 18px 12px;
+
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+}
+
+.admin-approved-nav-item {
+  width: 100%;
+
+  min-height: 44px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #5d5d5d;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 14px;
+
+  margin-bottom: 4px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  text-align: left;
+
+  transition: all 0.2s ease;
+}
+
+.admin-approved-nav-item:hover {
+  background: #faf3ed;
+  color: #8d2f2f;
+}
+
+.admin-approved-nav-item.active {
+  background: #f7e9df;
+
+  color: #8d2f2f;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.admin-approved-logout {
+  margin: 14px 12px 20px;
+
+  min-height: 44px;
+
+  border: 1px solid #eeeeee;
+
+  background: #ffffff;
+
+  color: #666666;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 14px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  flex-shrink: 0;
+}
+
+.admin-approved-logout:hover {
+  background: #fff4f4;
+
+  color: #b3261e;
+
+  border-color: #f0cccc;
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+.admin-approved-main {
+  width: calc(100% - 250px);
+
+  margin-left: 250px;
+
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+  padding: 30px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-approved-header {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.approved-page-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9a634d;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.admin-approved-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+
+  line-height: 1.2;
+
+  color: #292929;
+}
+
+.admin-approved-header p {
+  margin: 7px 0 0;
+
+  color: #777777;
+
+  font-size: 14px;
+}
+
+.admin-approved-header-count {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+
+  padding: 12px 16px;
+
+  border-radius: 9px;
+
+  color: #8d2f2f;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.admin-approved-stats {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.admin-approved-stat-card {
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  box-sizing: border-box;
+}
+
+.admin-approved-stat-icon {
+  width: 45px;
+  height: 45px;
+
+  min-width: 45px;
+
+  border-radius: 9px;
+
+  background: #f7e9df;
+
+  color: #8d2f2f;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.admin-approved-stat-icon.active-icon {
+  background: #eaf7ef;
+
+  color: #247a45;
+}
+
+.admin-approved-stat-icon.suspended-icon {
+  background: #fff0f0;
+
+  color: #b3261e;
+}
+
+.admin-approved-stat-card span {
+  display: block;
+
+  color: #777777;
+
+  font-size: 13px;
+
+  margin-bottom: 5px;
+}
+
+.admin-approved-stat-card strong {
+  font-size: 24px;
+
+  color: #292929;
+}
+
+/* =========================================
+   FILTER
+========================================= */
+
+.admin-approved-filter-card {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.admin-approved-search {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 44px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 13px;
+
+  color: #888888;
+}
+
+.admin-approved-search:focus-within {
+  border-color: #a45b4a;
+}
+
+.admin-approved-search input {
+  width: 100%;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 14px;
+
+  color: #222222;
+
+  background: transparent;
+}
+
+.admin-approved-search input::placeholder {
+  color: #999999;
+}
+
+.admin-approved-status-filter {
+  width: 180px;
+
+  min-width: 180px;
+
+  height: 44px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 12px;
+
+  color: #777777;
+}
+
+.admin-approved-status-filter select {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #444444;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   LIST CARD
+========================================= */
+
+.admin-approved-list-card {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8e8;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   LIST HEADER
+========================================= */
+
+.admin-approved-list-header {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.admin-approved-list-header > div {
+  text-align: left;
+}
+
+.admin-approved-list-header > div > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #9a634d;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.admin-approved-list-header h2 {
+  margin: 0;
+
+  font-size: 19px;
+
+  line-height: 1.3;
+
+  color: #292929;
+}
+
+.admin-approved-list-header p {
+  margin: 5px 0 0;
+
+  color: #888888;
+
+  font-size: 13px;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.admin-approved-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+}
+
+.admin-approved-table {
+  width: 100%;
+
+  min-width: 0;
+
+  table-layout: auto;
+
+  border-collapse: collapse;
+}
+
+.admin-approved-table th {
+  background: #fafafa;
+
+  color: #777777;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-align: left;
+
+  padding: 13px 14px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  white-space: nowrap;
+}
+
+.admin-approved-table td {
+  padding: 14px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  font-size: 13px;
+
+  color: #555555;
+
+  vertical-align: middle;
+}
+
+.admin-approved-table tbody tr:hover {
+  background: #fffdfb;
+}
+
+/* =========================================
+   ACTION COLUMN
+========================================= */
+
+.admin-approved-table th.action-column,
+.admin-approved-table td.action-column {
+  width: 80px;
+
+  min-width: 80px;
+
+  text-align: center;
+}
+
+/* =========================================
+   PRIEST NAME
+========================================= */
+
+.admin-priest-name-cell {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 150px;
+}
+
+.admin-priest-avatar {
+  width: 40px;
+  height: 40px;
+
+  min-width: 40px;
+
+  border-radius: 50%;
+
+  background: #f2dfd3;
+
+  color: #8d2f2f;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: 800;
+}
+
+.admin-priest-name-cell strong {
+  display: block;
+
+  color: #333333;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.admin-priest-name-cell small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #999999;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   BADGES
+========================================= */
+
+.specialization-badge {
+  display: inline-block;
+
+  background: #f7f0e9;
+
+  color: #86522f;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+.priest-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.status-active {
+  background: #eaf7ef;
+
+  color: #247a45;
+}
+
+.status-suspended {
+  background: #fff0f0;
+
+  color: #b3261e;
+}
+
+.location-cell {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.view-priest-btn {
+  border: 1px solid #dfc3b3;
+
+  background: #fffaf6;
+
+  color: #8d2f2f;
+
+  min-height: 34px;
+
+  padding: 0 10px;
+
+  border-radius: 6px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.view-priest-btn:hover {
+  background: #f7e9df;
+}
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.admin-approved-empty {
+  min-height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #999999;
+
+  text-align: center;
+}
+
+.admin-approved-empty h3 {
+  margin: 12px 0 5px;
+
+  color: #555555;
+}
+
+.admin-approved-empty p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+/* =========================================
+   MOBILE LIST
+========================================= */
+
+.admin-approved-mobile-list {
+  display: none;
+}
+
+/* =========================================
+   MODAL
+========================================= */
+
+.approved-priest-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: 1000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.approved-priest-modal {
+  width: min(700px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.approved-priest-modal-header {
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.approved-priest-modal-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.approved-priest-modal-header p {
+  margin: 4px 0 0;
+
+  color: #999999;
+
+  font-size: 12px;
+}
+
+.modal-close-btn {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f6f6f6;
+
+  color: #666666;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  background: #eeeeee;
+}
+
+.approved-priest-modal-body {
+  padding: 22px;
+}
+
+.modal-priest-profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  margin-bottom: 20px;
+}
+
+.large-priest-avatar {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #f2dfd3;
+
+  color: #8d2f2f;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+
+  font-weight: 800;
+}
+
+.modal-priest-profile h3 {
+  margin: 0 0 7px;
+
+  font-size: 18px;
+}
+
+.modal-detail-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.modal-detail-item {
+  background: #fafafa;
+
+  border-radius: 8px;
+
+  padding: 12px;
+}
+
+.modal-detail-item > span,
+.modal-services-section > span {
+  display: block;
+
+  color: #999999;
+
+  font-size: 11px;
+
+  margin-bottom: 6px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+}
+
+.modal-detail-item > strong {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #444444;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.modal-services-section {
+  margin-top: 16px;
+
+  background: #fffaf6;
+
+  border: 1px solid #f0e0d5;
+
+  padding: 14px;
+
+  border-radius: 8px;
+}
+
+.modal-services-section p {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.approved-priest-modal-footer {
+  padding: 16px 22px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+.modal-secondary-btn,
+.modal-primary-btn {
+  min-height: 40px;
+
+  padding: 0 16px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.modal-secondary-btn {
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  color: #555555;
+}
+
+.modal-primary-btn {
+  background: #8d2f2f;
+
+  border: 1px solid #8d2f2f;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .admin-approved-page {
+    display: block;
+  }
+
+  /* MOBILE HEADER */
+
+  .approved-mobile-header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 90;
+
+    height: 64px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+  }
+
+  .approved-mobile-menu-btn,
+  .approved-mobile-back-btn {
+    width: 40px;
+
+    height: 40px;
+
+    border: 1px solid #eeeeee;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #8d2f2f;
+
+    cursor: pointer;
+  }
+
+  .approved-mobile-brand {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    line-height: 1.1;
+  }
+
+  .approved-mobile-brand strong {
+    color: #8d2f2f;
+
+    font-size: 18px;
+  }
+
+  .approved-mobile-brand span {
+    color: #888888;
+
+    font-size: 9px;
+
+    margin-top: 3px;
+  }
+
+  /* OVERLAY */
+
+  .approved-mobile-overlay {
+    display: block;
+
+    position: fixed;
+
+    inset: 0;
+
+    border: none;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    z-index: 199;
+  }
+
+  /* SIDEBAR DRAWER */
+
+  .admin-approved-sidebar {
+    width: 275px;
+
+    min-width: 275px;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.25s ease;
+
+    z-index: 200;
+
+    box-shadow: 8px 0 25px rgba(0, 0, 0, 0.12);
+  }
+
+  .admin-approved-sidebar.admin-approved-sidebar-open {
+    transform: translateX(0);
+  }
+
+  /* MAIN */
+
+  .admin-approved-main {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding: 18px 14px 30px;
+
+    box-sizing: border-box;
+  }
+
+  .admin-approved-header {
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+  }
+
+  .admin-approved-header h1 {
+    font-size: 25px;
+  }
+
+  .admin-approved-header p {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .admin-approved-header-count {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    justify-content: center;
+  }
+
+  /* STATS */
+
+  .admin-approved-stats {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .admin-approved-stat-card {
+    padding: 16px;
+  }
+
+  /* FILTER */
+
+  .admin-approved-filter-card {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 12px;
+
+    gap: 10px;
+  }
+
+  .admin-approved-status-filter {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  /* HIDE DESKTOP TABLE */
+
+  .admin-approved-table-wrapper {
+    display: none;
+  }
+
+  /* SHOW MOBILE CARDS */
+
+  .admin-approved-mobile-list {
+    display: block;
+
+    padding: 14px;
+  }
+
+  .approved-priest-mobile-card {
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+  }
+
+  .mobile-priest-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 16px;
+  }
+
+  .mobile-priest-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+  }
+
+  .mobile-priest-details span {
+    display: block;
+
+    font-size: 10px;
+
+    color: #999999;
+
+    margin-bottom: 4px;
+  }
+
+  .mobile-priest-details strong {
+    display: block;
+
+    color: #444444;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+  }
+
+  .mobile-view-btn {
+    width: 100%;
+  }
+
+  .mobile-empty-state {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    color: #999999;
+  }
+
+  .mobile-empty-state h3 {
+    color: #555555;
+
+    margin: 10px 0 5px;
+  }
+
+  .mobile-empty-state p {
+    margin: 0;
+
+    font-size: 13px;
+  }
+
+  /* MODAL */
+
+  .approved-priest-modal-overlay {
+    padding: 10px;
+  }
+
+  .approved-priest-modal-body {
+    padding: 16px;
+  }
+
+  .modal-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approved-priest-modal-footer {
+    padding: 14px 16px;
+  }
+
+  .modal-secondary-btn,
+  .modal-primary-btn {
+    flex: 1;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .approved-mobile-header {
+    height: 60px;
+  }
+
+  .approved-mobile-brand strong {
+    font-size: 17px;
+  }
+
+  .admin-approved-main {
+    padding: 16px 12px 25px;
+  }
+
+  .admin-approved-list-header {
+    padding: 16px;
+  }
+
+  .mobile-priest-details {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-priest-top {
+    flex-direction: column;
+  }
+
+  .mobile-priest-top .priest-status {
+    align-self: flex-start;
+  }
+}

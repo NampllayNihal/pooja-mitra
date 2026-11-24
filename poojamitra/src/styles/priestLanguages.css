@@ -1,0 +1,735 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST LANGUAGES & SPECIALIZATIONS
+   Existing Theme
+========================================= */
+
+.priest-languages-page {
+  min-height: 100vh;
+  background: #faf7f2;
+  color: #4b211b;
+  padding: 20px;
+}
+
+.priest-languages-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.priest-languages-header {
+  width: 100%;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  position: relative;
+}
+
+.languages-back-button {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #eaded2;
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+.languages-back-button:hover {
+  background: #f6eee5;
+  transform: translateX(-2px);
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.languages-page-logo {
+  width: 180px !important;
+  height: 82px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+
+  flex-shrink: 0;
+
+  margin: 0 auto;
+}
+
+.languages-page-logo img {
+  width: 180px !important;
+  height: auto !important;
+
+  max-width: 180px !important;
+  max-height: 82px !important;
+
+  object-fit: contain !important;
+
+  display: block !important;
+}
+
+.languages-header-spacer {
+  width: 42px;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.languages-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 750px;
+
+  margin: 10px auto 25px;
+}
+
+.languages-progress-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.languages-progress-step span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+.languages-progress-step p {
+  margin: 0;
+}
+
+.languages-progress-step.completed,
+.languages-progress-step.active {
+  color: #7c2f23;
+  font-weight: 600;
+}
+
+.languages-progress-step.completed span {
+  background: #f1dfca;
+  border-color: #d5b28c;
+  color: #7c2f23;
+}
+
+.languages-progress-step.active span {
+  background: #7c2f23;
+  border-color: #7c2f23;
+  color: #fff;
+}
+
+.languages-progress-line {
+  height: 1px;
+  width: 60px;
+
+  background: #dccfc4;
+
+  margin: 0 10px;
+}
+
+.languages-progress-line.active {
+  background: #b97855;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.priest-languages-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow: 0 8px 30px rgba(83, 42, 28, 0.07);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.languages-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 28px;
+}
+
+.languages-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #8a3928;
+
+  background: #f8e9d8;
+}
+
+.languages-title h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.languages-title p {
+  margin: 5px 0 0;
+
+  color: #8c756a;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.selection-section {
+  margin-bottom: 32px;
+}
+
+.specialization-section {
+  padding-top: 25px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+}
+
+.section-heading-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #f8eee5;
+
+  color: #8a3928;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  margin: 4px 0 0;
+
+  color: #948177;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   LANGUAGE GRID
+========================================= */
+
+.selection-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 11px;
+}
+
+.selection-card {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 12px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 11px;
+
+  color: #5b3028;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: 0.2s ease;
+}
+
+.selection-card:hover {
+  border-color: #b97855;
+
+  background: #fffaf5;
+}
+
+.selection-card.selected {
+  background: #fff3e5;
+
+  border-color: #9b4b36;
+
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+.selection-check {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  border: 1px solid #d7c7bb;
+
+  color: #fff;
+}
+
+.selection-card.selected .selection-check {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+}
+
+.selection-name {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+/* =========================================
+   SPECIALIZATION GRID
+========================================= */
+
+.specialization-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 11px;
+}
+
+.specialization-card {
+  min-height: 54px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 11px;
+
+  color: #5b3028;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: 0.2s ease;
+}
+
+.specialization-card:hover {
+  border-color: #b97855;
+
+  background: #fffaf5;
+}
+
+.specialization-card.selected {
+  background: #fff3e5;
+
+  border-color: #9b4b36;
+
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+.specialization-check {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  border: 1px solid #d7c7bb;
+
+  color: #fff;
+}
+
+.specialization-card.selected .specialization-check {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+}
+
+/* =========================================
+   SELECTION INFO
+========================================= */
+
+.selected-count {
+  margin-top: 12px;
+
+  color: #9b624e;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.selection-error {
+  margin: 9px 0 0;
+
+  color: #b33a2e;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.languages-actions {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 10px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.languages-secondary-button,
+.languages-primary-button {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.languages-secondary-button {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+.languages-secondary-button:hover {
+  background: #f8f0e9;
+}
+
+.languages-primary-button {
+  min-width: 130px;
+
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  box-shadow: 0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+.languages-primary-button:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.languages-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+
+  color: #99867b;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.languages-footer p {
+  margin: 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .selection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specialization-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .priest-languages-page {
+    padding: 12px;
+  }
+
+  .priest-languages-header {
+    height: 82px;
+  }
+
+  .languages-page-logo {
+    width: 145px !important;
+    height: 65px !important;
+  }
+
+  .languages-page-logo img {
+    width: 145px !important;
+    max-width: 145px !important;
+    max-height: 65px !important;
+  }
+
+  .priest-languages-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .languages-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .languages-progress-step p {
+    display: none;
+  }
+
+  .languages-progress-line {
+    width: 35px;
+
+    margin: 0 7px;
+  }
+
+  .languages-title h1 {
+    font-size: 21px;
+  }
+
+  .languages-title p {
+    font-size: 13px;
+  }
+
+  .selection-grid,
+  .specialization-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .languages-actions {
+    flex-direction: column-reverse;
+  }
+
+  .languages-secondary-button,
+  .languages-primary-button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .priest-languages-card {
+    padding: 18px 14px;
+  }
+
+  .languages-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .languages-title {
+    gap: 11px;
+  }
+
+  .languages-page-logo {
+    width: 125px !important;
+    height: 58px !important;
+  }
+
+  .languages-page-logo img {
+    width: 125px !important;
+    max-width: 125px !important;
+    max-height: 58px !important;
+  }
+}
+
+
+/* =========================================
+   FINAL 5-STEP WORKFLOW
+========================================= */
+
+.languages-progress {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.languages-progress-line {
+  width: 45px;
+  min-width: 45px;
+  margin: 0 8px;
+}
+
+/* Keep the workflow compact on smaller screens */
+@media (max-width: 800px) {
+
+  .languages-progress {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .languages-progress-line {
+    width: 35px;
+    min-width: 35px;
+    margin: 0 6px;
+  }
+
+}

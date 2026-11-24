@@ -1,0 +1,103 @@
+{
+  "common": {
+    "back": "Back",
+    "continue": "Continue",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "loading": "Loading",
+    "required": "Required"
+  },
+
+  "navigation": {
+    "home": "Home",
+    "bookings": "My Bookings",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "settings": "Settings",
+    "support": "Support",
+    "logout": "Logout"
+  },
+
+  "auth": {
+    "customer": "Customer",
+    "priest": "Priest",
+    "mobileNumber": "Mobile Number",
+    "sendOtp": "Send OTP",
+    "verifyOtp": "Verify OTP",
+    "continueGuest": "Continue as Guest",
+    "createAccount": "Create Account",
+    "registerAsPriest": "Register as Priest",
+    "enterOtp": "Enter OTP",
+    "resendOtp": "Resend OTP"
+  },
+
+  "customer": {
+    "welcome": "Welcome to PoojaMitra",
+    "bookPooja": "Book a Pooja",
+    "findPriest": "Find a Priest",
+    "categories": "Categories",
+    "popularServices": "Popular Services",
+    "upcomingBookings": "Upcoming Bookings"
+  },
+
+  "priest": {
+    "registration": "Priest Registration",
+    "basicDetails": "Basic Details",
+    "professional": "Professional",
+    "languages": "Languages & Specializations",
+    "location": "Service Location",
+    "documents": "Documents",
+    "verification": "Verification",
+    "dashboard": "Priest Dashboard",
+    "professionalDetails": "Professional Details",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "dateOfBirth": "Date of Birth",
+    "gender": "Gender",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "pincode": "Pincode",
+    "priestType": "Priest Type",
+    "qualification": "Religious / Vedic Qualification",
+    "experience": "Years of Experience",
+    "specialization": "Primary Specialization",
+    "description": "Professional Description",
+    "selectLanguage": "Select Languages",
+    "selectSpecialization": "Select Specializations"
+  },
+
+  "languages": {
+    "title": "Languages & Specializations",
+    "subtitle": "Tell us the languages you speak and the ceremonies you specialize in",
+    "spokenLanguages": "Languages You Speak",
+    "specializations": "Your Specializations",
+    "english": "English",
+    "telugu": "Telugu",
+    "hindi": "Hindi",
+    "sanskrit": "Sanskrit",
+    "tamil": "Tamil",
+    "kannada": "Kannada",
+    "malayalam": "Malayalam",
+    "marathi": "Marathi",
+    "other": "Other"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "english": "English",
+    "telugu": "Telugu",
+    "hindi": "Hindi"
+  },
+
+  "messages": {
+    "languageChanged": "Language changed successfully",
+    "informationSaved": "Information saved successfully"
+  }
+}

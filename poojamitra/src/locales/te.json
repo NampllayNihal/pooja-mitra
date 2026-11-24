@@ -1,0 +1,103 @@
+{
+  "common": {
+    "back": "వెనుకకు",
+    "continue": "కొనసాగించు",
+    "save": "సేవ్ చేయండి",
+    "cancel": "రద్దు చేయండి",
+    "submit": "సమర్పించండి",
+    "next": "తదుపరి",
+    "previous": "మునుపటి",
+    "close": "మూసివేయండి",
+    "loading": "లోడ్ అవుతోంది",
+    "required": "అవసరం"
+  },
+
+  "navigation": {
+    "home": "హోమ్",
+    "bookings": "నా బుకింగ్స్",
+    "notifications": "నోటిఫికేషన్స్",
+    "profile": "ప్రొఫైల్",
+    "settings": "సెట్టింగ్స్",
+    "support": "సహాయం",
+    "logout": "లాగ్ అవుట్"
+  },
+
+  "auth": {
+    "customer": "కస్టమర్",
+    "priest": "పూజారి",
+    "mobileNumber": "మొబైల్ నంబర్",
+    "sendOtp": "OTP పంపండి",
+    "verifyOtp": "OTP ధృవీకరించండి",
+    "continueGuest": "గెస్ట్‌గా కొనసాగండి",
+    "createAccount": "అకౌంట్ సృష్టించండి",
+    "registerAsPriest": "పూజారిగా నమోదు చేసుకోండి",
+    "enterOtp": "OTP నమోదు చేయండి",
+    "resendOtp": "OTP మళ్లీ పంపండి"
+  },
+
+  "customer": {
+    "welcome": "PoojaMitra కు స్వాగతం",
+    "bookPooja": "పూజ బుక్ చేయండి",
+    "findPriest": "పూజారిని కనుగొనండి",
+    "categories": "కేటగిరీలు",
+    "popularServices": "ప్రసిద్ధ సేవలు",
+    "upcomingBookings": "రాబోయే బుకింగ్స్"
+  },
+
+  "priest": {
+    "registration": "పూజారి నమోదు",
+    "basicDetails": "ప్రాథమిక వివరాలు",
+    "professional": "వృత్తిపరమైన వివరాలు",
+    "languages": "భాషలు & ప్రత్యేకతలు",
+    "location": "సేవా ప్రాంతం",
+    "documents": "పత్రాలు",
+    "verification": "ధృవీకరణ",
+    "dashboard": "పూజారి డాష్‌బోర్డ్",
+    "professionalDetails": "వృత్తిపరమైన వివరాలు",
+    "fullName": "పూర్తి పేరు",
+    "email": "ఈమెయిల్ చిరునామా",
+    "dateOfBirth": "పుట్టిన తేదీ",
+    "gender": "లింగం",
+    "address": "చిరునామా",
+    "city": "నగరం",
+    "state": "రాష్ట్రం",
+    "pincode": "పిన్‌కోడ్",
+    "priestType": "పూజారి రకం",
+    "qualification": "వేద / మతపరమైన అర్హత",
+    "experience": "అనుభవం సంవత్సరాలు",
+    "specialization": "ప్రధాన ప్రత్యేకత",
+    "description": "వృత్తిపరమైన వివరణ",
+    "selectLanguage": "భాషలను ఎంచుకోండి",
+    "selectSpecialization": "ప్రత్యేకతలను ఎంచుకోండి"
+  },
+
+  "languages": {
+    "title": "భాషలు & ప్రత్యేకతలు",
+    "subtitle": "మీకు తెలిసిన భాషలు మరియు మీ ప్రత్యేకతలను తెలియజేయండి",
+    "spokenLanguages": "మీకు తెలిసిన భాషలు",
+    "specializations": "మీ ప్రత్యేకతలు",
+    "english": "ఆంగ్లం",
+    "telugu": "తెలుగు",
+    "hindi": "హిందీ",
+    "sanskrit": "సంస్కృతం",
+    "tamil": "తమిళం",
+    "kannada": "కన్నడ",
+    "malayalam": "మలయాళం",
+    "marathi": "మరాఠీ",
+    "other": "ఇతర"
+  },
+
+  "settings": {
+    "title": "సెట్టింగ్స్",
+    "language": "భాష",
+    "selectLanguage": "భాషను ఎంచుకోండి",
+    "english": "ఆంగ్లం",
+    "telugu": "తెలుగు",
+    "hindi": "హిందీ"
+  },
+
+  "messages": {
+    "languageChanged": "భాష విజయవంతంగా మార్చబడింది",
+    "informationSaved": "సమాచారం విజయవంతంగా సేవ్ చేయబడింది"
+  }
+}

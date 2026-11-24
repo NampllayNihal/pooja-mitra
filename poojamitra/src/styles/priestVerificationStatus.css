@@ -1,0 +1,870 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST VERIFICATION STATUS
+   Existing Theme
+========================================= */
+
+.priest-verification-status-page {
+  min-height: 100vh;
+
+  background: #faf7f2;
+
+  color: #4b211b;
+
+  padding: 20px;
+}
+
+
+.priest-verification-status-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.verification-status-header {
+  min-height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+
+.verification-back-button {
+  width: 42px;
+
+  height: 42px;
+
+  border: 1px solid #eaded2;
+
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.verification-back-button:hover {
+  background: #f6eee5;
+
+  transform: translateX(-2px);
+}
+
+
+/* =========================================
+   SMALL LOGO
+========================================= */
+
+.verification-status-logo {
+  width: 150px !important;
+
+  height: 70px !important;
+
+  max-width: 150px !important;
+
+  max-height: 70px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  overflow: hidden !important;
+
+  flex-shrink: 0 !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+}
+
+
+.verification-status-logo img {
+  width: 150px !important;
+
+  height: 70px !important;
+
+  max-width: 150px !important;
+
+  max-height: 70px !important;
+
+  object-fit: contain !important;
+
+  object-position: center !important;
+
+  display: block !important;
+}
+
+
+.verification-status-header .logo-crop {
+  position: relative !important;
+
+  top: auto !important;
+
+  left: auto !important;
+
+  right: auto !important;
+
+  bottom: auto !important;
+
+  transform: none !important;
+}
+
+
+.verification-header-spacer {
+  width: 42px;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.verification-progress {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  max-width: 750px;
+
+  margin: 8px auto 25px;
+}
+
+
+.verification-progress-step {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+
+.verification-progress-step span {
+  width: 30px;
+
+  height: 30px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+
+.verification-progress-step p {
+  margin: 0;
+}
+
+
+.verification-progress-step.completed,
+.verification-progress-step.active {
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+
+.verification-progress-step.completed span {
+  background: #f1dfca;
+
+  border-color: #d5b28c;
+
+  color: #7c2f23;
+}
+
+
+.verification-progress-step.active span {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+
+.verification-progress-line {
+  height: 1px;
+
+  width: 55px;
+
+  background: #dccfc4;
+
+  margin: 0 10px;
+}
+
+
+.verification-progress-line.completed-line,
+.verification-progress-line.active-line {
+  background: #b97855;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.verification-status-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 8px 30px rgba(83, 42, 28, 0.07);
+
+  text-align: center;
+}
+
+
+/* =========================================
+   MAIN ICON
+========================================= */
+
+.verification-main-icon {
+  width: 74px;
+
+  height: 74px;
+
+  margin: 0 auto 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff3e5;
+
+  border: 1px solid #e8cda9;
+
+  color: #9b624e;
+}
+
+
+.verification-status-label {
+  color: #9b624e;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+}
+
+
+.verification-status-card h1 {
+  margin: 6px 0 8px;
+
+  color: #54241c;
+
+  font-size: 26px;
+
+  font-weight: 700;
+}
+
+
+.verification-description {
+  max-width: 620px;
+
+  margin: 0 auto;
+
+  color: #8c756a;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   STATUS BADGE
+========================================= */
+
+.verification-status-badge {
+  width: fit-content;
+
+  margin: 17px auto 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  background: #fff4e5;
+
+  border: 1px solid #efd4af;
+
+  color: #8a5425;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.verification-status-dot {
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #b66a16;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.verification-timeline {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  padding: 22px;
+
+  text-align: left;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 16px;
+
+  background: #fffaf5;
+}
+
+
+.verification-timeline-item {
+  position: relative;
+
+  display: flex;
+
+  gap: 13px;
+
+  padding-bottom: 25px;
+}
+
+
+.verification-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+
+.verification-timeline-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 16px;
+
+  top: 34px;
+
+  width: 1px;
+
+  height: calc(100% - 25px);
+
+  background: #ded0c5;
+}
+
+
+.verification-timeline-item.completed:not(:last-child)::after {
+  background: #c99b77;
+}
+
+
+.timeline-icon {
+  width: 33px;
+
+  height: 33px;
+
+  flex-shrink: 0;
+
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fffdf9;
+
+  border: 1px solid #d8c9bd;
+
+  color: #a58b7e;
+}
+
+
+.verification-timeline-item.completed .timeline-icon {
+  background: #f1dfca;
+
+  border-color: #d5b28c;
+
+  color: #7c2f23;
+}
+
+
+.verification-timeline-item.current .timeline-icon {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+
+.timeline-content {
+  padding-top: 2px;
+}
+
+
+.timeline-content h3 {
+  margin: 0 0 4px;
+
+  color: #5b3028;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+.timeline-content p {
+  margin: 0;
+
+  color: #8c756a;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+.current-status {
+  display: inline-block;
+
+  margin-top: 6px;
+
+  color: #9b624e;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.verification-information-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-top: 18px;
+
+  text-align: left;
+}
+
+
+.verification-information-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  padding: 15px;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 13px;
+
+  background: #fffaf5;
+}
+
+
+.verification-information-icon {
+  width: 36px;
+
+  height: 36px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #f8e9d8;
+
+  color: #8a3928;
+}
+
+
+.verification-information-card h3 {
+  margin: 0 0 4px;
+
+  color: #5b3028;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.verification-information-card p {
+  margin: 0;
+
+  color: #8c756a;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.verification-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-top: 18px;
+
+  padding: 13px 15px;
+
+  border-radius: 11px;
+
+  background: #fff6e9;
+
+  border: 1px solid #f0dfc6;
+
+  color: #765b49;
+
+  text-align: left;
+}
+
+
+.verification-note svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #b66a16;
+}
+
+
+.verification-note p {
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.verification-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 24px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #eee3da;
+}
+
+
+.verification-secondary-button,
+.verification-primary-button {
+  min-height: 45px;
+
+  padding: 0 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.verification-secondary-button {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+
+.verification-secondary-button:hover {
+  background: #f8f0e9;
+}
+
+
+.verification-primary-button {
+  min-width: 145px;
+
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  box-shadow:
+    0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+
+.verification-primary-button:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.verification-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 18px;
+
+  color: #99867b;
+
+  font-size: 10px;
+}
+
+
+.verification-footer svg {
+  color: #8a3928;
+}
+
+
+.verification-footer p {
+  margin: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 750px) {
+
+  .verification-information-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .priest-verification-status-page {
+    padding: 12px;
+  }
+
+
+  .verification-status-header {
+    min-height: 65px;
+  }
+
+
+  .verification-status-logo {
+    width: 120px !important;
+
+    height: 60px !important;
+
+    max-width: 120px !important;
+
+    max-height: 60px !important;
+  }
+
+
+  .verification-status-logo img {
+    width: 120px !important;
+
+    height: 60px !important;
+
+    max-width: 120px !important;
+
+    max-height: 60px !important;
+  }
+
+
+  .verification-status-card {
+    padding: 24px 16px;
+
+    border-radius: 18px;
+  }
+
+
+  .verification-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+
+  .verification-progress-step p {
+    display: none;
+  }
+
+
+  .verification-progress-line {
+    width: 35px;
+
+    margin: 0 7px;
+  }
+
+
+  .verification-status-card h1 {
+    font-size: 22px;
+  }
+
+
+  .verification-description {
+    font-size: 12px;
+  }
+
+
+  .verification-timeline {
+    padding: 17px;
+  }
+
+
+  .verification-actions {
+    flex-direction: column-reverse;
+  }
+
+
+  .verification-secondary-button,
+  .verification-primary-button {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .verification-status-card {
+    padding: 20px 13px;
+  }
+
+
+  .verification-main-icon {
+    width: 65px;
+
+    height: 65px;
+  }
+
+}

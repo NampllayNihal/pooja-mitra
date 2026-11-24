@@ -1,0 +1,40 @@
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  min-height: 42px;
+
+  padding: 0 12px;
+
+  background: #fffdf9;
+
+  border: 1px solid #eaded2;
+  border-radius: 11px;
+
+  color: #7c2f23;
+}
+
+.language-selector svg {
+  flex-shrink: 0;
+}
+
+.language-selector select {
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #5b3028;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.language-selector.compact {
+  min-height: 36px;
+  padding: 0 9px;
+}

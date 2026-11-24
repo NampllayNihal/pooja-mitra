@@ -1,0 +1,631 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST PROFESSIONAL DETAILS
+   Existing Theme
+========================================= */
+
+.priest-professional-page {
+  min-height: 100vh;
+  background: #faf7f2;
+  color: #4b211b;
+  padding: 20px;
+}
+
+.priest-professional-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.priest-professional-header {
+  width: 100%;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  position: relative;
+}
+
+/* BACK BUTTON */
+
+.professional-back-button {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #eaded2;
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+.professional-back-button:hover {
+  background: #f6eee5;
+  transform: translateX(-2px);
+}
+
+/* =========================================
+   PROFESSIONAL PAGE LOGO
+   FIXED SIZE
+========================================= */
+
+.professional-page-logo {
+  width: 180px !important;
+  height: 82px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+
+  flex-shrink: 0;
+
+  margin: 0 auto;
+}
+
+/*
+   The Logo component contains an image.
+   Force the image to stay inside the
+   professional page logo area.
+*/
+
+.professional-page-logo img {
+  width: 180px !important;
+  height: auto !important;
+
+  max-width: 180px !important;
+  max-height: 82px !important;
+
+  object-fit: contain !important;
+
+  display: block !important;
+}
+
+/* Keep header balanced */
+
+.professional-header-spacer {
+  width: 42px;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.professional-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 650px;
+
+  margin: 10px auto 25px;
+}
+
+.professional-progress-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.professional-progress-step span {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+.professional-progress-step p {
+  margin: 0;
+}
+
+.professional-progress-step.completed,
+.professional-progress-step.active {
+  color: #7c2f23;
+  font-weight: 600;
+}
+
+.professional-progress-step.completed span {
+  background: #f1dfca;
+  border-color: #d5b28c;
+  color: #7c2f23;
+}
+
+.professional-progress-step.active span {
+  color: #fff;
+  background: #7c2f23;
+  border-color: #7c2f23;
+}
+
+.professional-progress-line {
+  height: 1px;
+  width: 65px;
+
+  background: #dccfc4;
+
+  margin: 0 12px;
+}
+
+.professional-progress-line.active {
+  background: #b97855;
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.priest-professional-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow: 0 8px 30px rgba(83, 42, 28, 0.07);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.professional-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.professional-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #8a3928;
+
+  background: #f8e9d8;
+}
+
+.professional-title h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.professional-title p {
+  margin: 5px 0 0;
+
+  color: #8c756a;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   NOTE
+========================================= */
+
+.professional-note {
+  display: flex;
+  gap: 10px;
+
+  padding: 13px 15px;
+
+  margin-bottom: 28px;
+
+  border-radius: 12px;
+
+  background: #fff6e9;
+  border: 1px solid #f0dfc6;
+}
+
+.professional-note span {
+  color: #b66a16;
+  font-size: 16px;
+}
+
+.professional-note p {
+  margin: 0;
+
+  color: #765b49;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.professional-form-group {
+  margin-bottom: 20px;
+}
+
+.professional-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #5b3028;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.professional-form-group label span {
+  color: #a9402d;
+}
+
+/* =========================================
+   INPUT
+========================================= */
+
+.professional-input-wrapper {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 13px;
+
+  background: #fff;
+
+  border: 1px solid #dfd1c6;
+  border-radius: 11px;
+
+  transition: 0.2s ease;
+}
+
+.professional-input-wrapper svg {
+  flex-shrink: 0;
+
+  color: #9b6a53;
+
+  margin-right: 10px;
+}
+
+.professional-input-wrapper:focus-within {
+  border-color: #a5523b;
+
+  box-shadow:
+    0 0 0 3px rgba(165, 82, 59, 0.08);
+}
+
+.professional-input-wrapper input,
+.professional-input-wrapper select {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #4b2923;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.professional-input-wrapper input::placeholder {
+  color: #aa9b91;
+}
+
+.professional-input-wrapper select {
+  cursor: pointer;
+}
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.professional-textarea-wrapper {
+  border: 1px solid #dfd1c6;
+  border-radius: 11px;
+
+  background: #fff;
+
+  padding: 12px 13px;
+
+  transition: 0.2s ease;
+}
+
+.professional-textarea-wrapper:focus-within {
+  border-color: #a5523b;
+
+  box-shadow:
+    0 0 0 3px rgba(165, 82, 59, 0.08);
+}
+
+.professional-textarea-wrapper textarea {
+  width: 100%;
+
+  min-height: 105px;
+
+  border: none;
+  outline: none;
+
+  resize: vertical;
+
+  background: transparent;
+
+  color: #4b2923;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.professional-textarea-wrapper textarea::placeholder {
+  color: #aa9b91;
+}
+
+.description-counter {
+  text-align: right;
+
+  margin-top: 5px;
+
+  color: #a18e82;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   HINT / ERROR
+========================================= */
+
+.professional-hint {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #99877c;
+
+  font-size: 11px;
+}
+
+.professional-error {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #b33a2e;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.professional-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-top: 30px;
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+.professional-secondary-button,
+.professional-primary-button {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.professional-secondary-button {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+.professional-secondary-button:hover {
+  background: #f8f0e9;
+}
+
+.professional-primary-button {
+  min-width: 130px;
+
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  box-shadow:
+    0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+.professional-primary-button:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.professional-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 22px;
+
+  color: #99867b;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.professional-footer p {
+  margin: 0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .priest-professional-page {
+    padding: 12px;
+  }
+
+  .priest-professional-header {
+    height: 82px;
+  }
+
+  /* Smaller logo on mobile */
+
+  .professional-page-logo {
+    width: 145px !important;
+    height: 65px !important;
+  }
+
+  .professional-page-logo img {
+    width: 145px !important;
+    max-width: 145px !important;
+    max-height: 65px !important;
+  }
+
+  .priest-professional-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+  .professional-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .professional-progress-step p {
+    display: none;
+  }
+
+  .professional-progress-line {
+    width: 35px;
+
+    margin: 0 7px;
+  }
+
+  .professional-title h1 {
+    font-size: 21px;
+  }
+
+  .professional-title p {
+    font-size: 13px;
+  }
+
+  .professional-actions {
+    flex-direction: column-reverse;
+  }
+
+  .professional-secondary-button,
+  .professional-primary-button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .priest-professional-card {
+    padding: 18px 14px;
+  }
+
+  .professional-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .professional-title {
+    gap: 11px;
+  }
+
+  .professional-page-logo {
+    width: 125px !important;
+    height: 58px !important;
+  }
+
+  .professional-page-logo img {
+    width: 125px !important;
+    max-width: 125px !important;
+    max-height: 58px !important;
+  }
+}

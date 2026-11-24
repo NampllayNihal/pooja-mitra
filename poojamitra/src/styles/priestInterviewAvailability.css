@@ -1,0 +1,1324 @@
+/* =========================================
+   POOJAMITRA
+   PRIEST INTERVIEW AVAILABILITY
+   Existing Theme
+========================================= */
+
+.interview-availability-page {
+  min-height: 100vh;
+
+  background: #faf7f2;
+
+  color: #4b211b;
+
+  padding: 20px;
+}
+
+
+.interview-availability-container {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.interview-header {
+  width: 100%;
+
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+
+.interview-header-spacer {
+  width: 42px;
+}
+
+
+.interview-back-button {
+  width: 42px;
+
+  height: 42px;
+
+  border: 1px solid #eaded2;
+
+  background: #fffdf9;
+
+  color: #6d2c21;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.interview-back-button:hover {
+  background: #f6eee5;
+
+  transform: translateX(-2px);
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.interview-progress {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  max-width: 850px;
+
+  margin: 8px auto 25px;
+}
+
+
+.interview-progress-step {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9a8176;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+
+.interview-progress-step span {
+  width: 30px;
+
+  height: 30px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d8c9bd;
+
+  background: #fffdf9;
+
+  font-weight: 600;
+}
+
+
+.interview-progress-step p {
+  margin: 0;
+}
+
+
+.interview-progress-step.completed,
+.interview-progress-step.active {
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+
+.interview-progress-step.completed span {
+  background: #f1dfca;
+
+  border-color: #d5b28c;
+
+  color: #7c2f23;
+}
+
+
+.interview-progress-step.active span {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+
+.interview-progress-line {
+  width: 45px;
+
+  height: 1px;
+
+  background: #dccfc4;
+
+  margin: 0 8px;
+}
+
+
+.interview-progress-line.active {
+  background: #b97855;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.interview-availability-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 8px 30px rgba(83, 42, 28, 0.07);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.interview-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+
+.interview-title-icon {
+  width: 50px;
+
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #8a3928;
+
+  background: #f8e9d8;
+}
+
+
+.interview-title h1 {
+  margin: 0;
+
+  color: #54241c;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+
+.interview-title p {
+  margin: 5px 0 0;
+
+  color: #8c756a;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.interview-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 13px 15px;
+
+  margin-bottom: 28px;
+
+  border-radius: 12px;
+
+  background: #fff6e9;
+
+  border: 1px solid #f0dfc6;
+
+  color: #8a3928;
+}
+
+
+.interview-note svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+}
+
+
+.interview-note p {
+  margin: 0;
+
+  color: #765b49;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.interview-section {
+  margin-bottom: 30px;
+}
+
+
+.time-section {
+  padding-top: 25px;
+
+  border-top: 1px solid #eee3da;
+}
+
+
+.interview-section-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  margin-bottom: 17px;
+}
+
+
+.section-icon {
+  width: 38px;
+
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #f8eee5;
+
+  color: #8a3928;
+}
+
+
+.interview-section-heading h2 {
+  margin: 0;
+
+  color: #5b3028;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+.interview-section-heading p {
+  margin: 4px 0 0;
+
+  color: #948177;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   DATE GRID
+========================================= */
+
+.date-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, 1fr);
+
+  gap: 9px;
+}
+
+
+.date-card {
+  position: relative;
+
+  min-height: 82px;
+
+  padding: 9px 5px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 2px;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 12px;
+
+  background: #fff;
+
+  color: #6e3429;
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.date-card:hover {
+  border-color: #b97855;
+
+  background: #fffaf5;
+}
+
+
+.date-card.selected {
+  background: #fff3e5;
+
+  border-color: #9b4b36;
+
+  color: #7c2f23;
+
+  box-shadow:
+    0 3px 10px rgba(124, 47, 35, 0.08);
+}
+
+
+.date-day {
+  color: #9b8176;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+
+.date-card strong {
+  font-size: 21px;
+
+  line-height: 1.1;
+}
+
+
+.date-month {
+  color: #9b8176;
+
+  font-size: 9px;
+}
+
+
+.date-check {
+  position: absolute;
+
+  top: 5px;
+
+  right: 5px;
+
+  width: 17px;
+
+  height: 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #7c2f23;
+
+  color: #fff;
+}
+
+
+/* =========================================
+   TIME GRID
+========================================= */
+
+.time-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 10px;
+}
+
+
+.time-card {
+  min-height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 11px;
+
+  border: 1px solid #dfd1c6;
+
+  border-radius: 11px;
+
+  background: #fff;
+
+  color: #654137;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  text-align: left;
+}
+
+
+.time-card:hover {
+  border-color: #b97855;
+
+  background: #fffaf5;
+}
+
+
+.time-card.selected {
+  background: #fff3e5;
+
+  border-color: #9b4b36;
+
+  color: #7c2f23;
+
+  font-weight: 600;
+}
+
+
+.time-card > svg {
+  color: #9b6a53;
+
+  flex-shrink: 0;
+}
+
+
+.time-check {
+  width: 19px;
+
+  height: 19px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 5px;
+
+  border: 1px solid #d7c7bb;
+}
+
+
+.time-card.selected .time-check {
+  background: #7c2f23;
+
+  border-color: #7c2f23;
+
+  color: #fff;
+}
+
+
+.selected-count {
+  margin: 11px 0 0;
+
+  color: #9b624e;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.interview-error {
+  padding: 10px 13px;
+
+  margin-bottom: 18px;
+
+  border-radius: 9px;
+
+  background: #fff0ed;
+
+  border: 1px solid #efc9c2;
+
+  color: #b33a2e;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.interview-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 10px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #eee3da;
+}
+
+
+.interview-secondary-button,
+.interview-primary-button {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  border-radius: 11px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.interview-secondary-button {
+  background: #fffdf9;
+
+  border: 1px solid #dfd1c6;
+
+  color: #6e3429;
+}
+
+
+.interview-secondary-button:hover {
+  background: #f8f0e9;
+}
+
+
+.interview-primary-button {
+  min-width: 165px;
+
+  border: none;
+
+  background: #7c2f23;
+
+  color: #fff;
+
+  box-shadow:
+    0 5px 14px rgba(124, 47, 35, 0.16);
+}
+
+
+.interview-primary-button:hover {
+  background: #68251c;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.interview-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 20px;
+
+  color: #99867b;
+
+  font-size: 10px;
+
+  text-align: center;
+}
+
+
+.interview-footer p {
+  margin: 0;
+}
+
+
+/* =========================================
+   SUCCESS PAGE
+========================================= */
+
+.interview-success-card {
+  background: #fffdf9;
+
+  border: 1px solid #eadfd5;
+
+  border-radius: 22px;
+
+  padding: 40px 34px;
+
+  box-shadow:
+    0 8px 30px rgba(83, 42, 28, 0.07);
+
+  text-align: center;
+}
+
+
+.interview-success-icon {
+  width: 66px;
+
+  height: 66px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1dfca;
+
+  border: 1px solid #d5b28c;
+
+  color: #7c2f23;
+}
+
+
+.interview-success-heading span {
+  color: #9b624e;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+
+
+.interview-success-heading h1 {
+  margin: 6px 0 0;
+
+  color: #54241c;
+
+  font-size: 26px;
+}
+
+
+.interview-success-heading p {
+  margin: 7px 0 25px;
+
+  color: #8c756a;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.selected-availability-box {
+  max-width: 500px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px;
+
+  text-align: left;
+
+  border: 1px solid #ead9c8;
+
+  border-radius: 13px;
+
+  background: #fff8ef;
+}
+
+
+.availability-summary-icon {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #f5e4d1;
+
+  color: #8a3928;
+}
+
+
+.selected-availability-box span {
+  display: block;
+
+  color: #9a8176;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+}
+
+
+.selected-availability-box strong {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #5b3028;
+
+  font-size: 13px;
+}
+
+
+.selected-slots-box {
+  max-width: 500px;
+
+  margin: 0 auto 15px;
+
+  padding: 14px;
+
+  text-align: left;
+
+  border: 1px solid #eaded2;
+
+  border-radius: 13px;
+
+  background: #fff;
+}
+
+
+.slots-summary-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #6e3429;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.selected-slots-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 10px;
+}
+
+
+.selected-slot {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  background: #fff3e5;
+
+  color: #7c2f23;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+.success-info {
+  max-width: 620px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  padding: 12px;
+
+  text-align: left;
+
+  border-radius: 10px;
+
+  background: #fff6e9;
+
+  border: 1px solid #f0dfc6;
+
+  color: #8a3928;
+}
+
+
+.success-info p {
+  margin: 0;
+
+  color: #765b49;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .date-grid {
+    grid-template-columns:
+      repeat(4, 1fr);
+  }
+
+  .time-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .interview-availability-page {
+    padding: 12px;
+  }
+
+
+  .interview-header {
+    height: 65px;
+  }
+
+
+  .interview-availability-card {
+    padding: 22px 18px;
+
+    border-radius: 18px;
+  }
+
+
+  .interview-progress {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+
+  .interview-progress-step p {
+    display: none;
+  }
+
+
+  .interview-progress-line {
+    width: 35px;
+
+    margin: 0 7px;
+  }
+
+
+  .interview-title h1 {
+    font-size: 21px;
+  }
+
+
+  .interview-title p {
+    font-size: 12px;
+  }
+
+
+  .date-grid {
+    grid-template-columns:
+      repeat(4, 1fr);
+  }
+
+
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .interview-actions {
+    flex-direction: column-reverse;
+  }
+
+
+  .interview-secondary-button,
+  .interview-primary-button {
+    width: 100%;
+  }
+
+
+  .interview-success-card {
+    padding: 28px 18px;
+  }
+
+
+  .interview-success-heading h1 {
+    font-size: 22px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .interview-availability-card {
+    padding: 18px 14px;
+  }
+
+
+  .date-card {
+    min-height: 72px;
+  }
+
+
+  .date-card strong {
+    font-size: 18px;
+  }
+
+}
+/* =========================================
+   INTERVIEW PAGE LOGO
+   Keep logo small and prevent overlap
+========================================= */
+
+.interview-header .interview-page-logo,
+.interview-success-card ~ .interview-page-logo,
+.interview-page-logo {
+  width: 150px !important;
+  height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+
+  flex-shrink: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* Control the actual logo image */
+
+.interview-page-logo img {
+  width: 150px !important;
+  height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+
+  object-position: center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.interview-header {
+  position: relative;
+
+  min-height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* Make sure the header logo cannot escape */
+
+.interview-header .logo-crop {
+  position: relative !important;
+
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+
+  transform: none !important;
+}
+
+
+/* =========================================
+   SUCCESS SCREEN LOGO
+========================================= */
+
+.interview-success-card .interview-page-logo {
+  width: 150px !important;
+  height: 70px !important;
+}
+
+
+@media (max-width: 600px) {
+
+  .interview-header .interview-page-logo,
+  .interview-page-logo {
+    width: 120px !important;
+    height: 60px !important;
+
+    max-width: 120px !important;
+    max-height: 60px !important;
+  }
+
+
+  .interview-page-logo img {
+    width: 120px !important;
+    height: 60px !important;
+
+    max-width: 120px !important;
+    max-height: 60px !important;
+  }
+
+}
+/* =========================================================
+   POOJAMITRA LOGO - INTERVIEW AVAILABILITY
+   Applies to BOTH normal page and success/submitted page
+========================================================= */
+
+.interview-availability-page .logo-crop {
+  width: 150px !important;
+  height: 70px !important;
+
+  min-width: 150px !important;
+  min-height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: relative !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  flex: 0 0 150px !important;
+
+  transform: none !important;
+}
+
+.interview-availability-page .logo-crop img {
+  width: 150px !important;
+  height: 70px !important;
+
+  min-width: 150px !important;
+  min-height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  position: relative !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+}
+
+
+/* =========================================================
+   SUCCESS PAGE LOGO
+========================================================= */
+
+.interview-success-card .logo-crop {
+  width: 150px !important;
+  height: 70px !important;
+
+  min-width: 150px !important;
+  min-height: 70px !important;
+
+  max-width: 150px !important;
+  max-height: 70px !important;
+
+  overflow: hidden !important;
+
+  position: relative !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .interview-availability-page .logo-crop,
+  .interview-success-card .logo-crop {
+    width: 120px !important;
+    height: 60px !important;
+
+    min-width: 120px !important;
+    min-height: 60px !important;
+
+    max-width: 120px !important;
+    max-height: 60px !important;
+
+    flex: 0 0 120px !important;
+  }
+
+  .interview-availability-page .logo-crop img,
+  .interview-success-card .logo-crop img {
+    width: 120px !important;
+    height: 60px !important;
+
+    min-width: 120px !important;
+    min-height: 60px !important;
+
+    max-width: 120px !important;
+    max-height: 60px !important;
+
+    object-fit: contain !important;
+  }
+
+}

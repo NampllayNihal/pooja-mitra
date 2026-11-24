@@ -1,0 +1,152 @@
+.notifications-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+/* Header */
+
+.notifications-header {
+  height: 64px;
+  background: white;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.notifications-header h1 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.notifications-back {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.notifications-header-space {
+  width: 40px;
+}
+
+/* Content */
+
+.notifications-content {
+  max-width: 650px;
+  margin: auto;
+  padding: 18px 16px 40px;
+}
+
+/* Notification list */
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-card {
+  display: flex;
+  gap: 13px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
+}
+
+.notification-unread {
+  border-left: 3px solid #536dfe;
+}
+
+.notification-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #eee8ff;
+  color: #6844c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notification-info {
+  flex: 1;
+}
+
+.notification-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.notification-title-row h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.unread-dot {
+  width: 7px;
+  height: 7px;
+  background: #536dfe;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.notification-info p {
+  margin: 6px 0;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.notification-time {
+  font-size: 10px;
+  color: #999;
+}
+
+/* Empty */
+
+.notifications-empty {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.empty-bell {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  background: #eee8ff;
+  color: #6844c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications-empty h2 {
+  margin: 18px 0 5px;
+  font-size: 18px;
+}
+
+.notifications-empty p {
+  color: #888;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .notifications-content {
+    padding: 14px 12px 30px;
+  }
+}
